@@ -1,0 +1,5 @@
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP3_Serveur\TP3_Interface\bin\Debug\TP3_Interface.dll
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP3_Serveur\TP3_Interface\bin\Debug\TP3_Interface.pdb
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP3_Serveur\TP3_Interface\obj\Debug\TP3_Interface.dll
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP3_Serveur\TP3_Interface\obj\Debug\TP3_Interface.pdb
+C:\Users\ChhimTiffany\Documents\Visual Studio 2015\Projects\TP3_Serveur\TP3_Interface\obj\Debug\TP3_Interface.csprojResolveAssemblyReference.cache

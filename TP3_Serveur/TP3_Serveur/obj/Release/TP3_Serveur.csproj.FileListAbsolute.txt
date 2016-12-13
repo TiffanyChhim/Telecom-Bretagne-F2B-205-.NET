@@ -1,0 +1,8 @@
+C:\Users\ChhimTiffany\Documents\Visual Studio 2015\Projects\TP3_Serveur\TP3_Serveur\bin\Release\TP3_Serveur.exe.config
+C:\Users\ChhimTiffany\Documents\Visual Studio 2015\Projects\TP3_Serveur\TP3_Serveur\bin\Release\TP3_Serveur.exe
+C:\Users\ChhimTiffany\Documents\Visual Studio 2015\Projects\TP3_Serveur\TP3_Serveur\bin\Release\TP3_Serveur.pdb
+C:\Users\ChhimTiffany\Documents\Visual Studio 2015\Projects\TP3_Serveur\TP3_Serveur\bin\Release\TP3_Interface.dll
+C:\Users\ChhimTiffany\Documents\Visual Studio 2015\Projects\TP3_Serveur\TP3_Serveur\bin\Release\TP3_Interface.pdb
+C:\Users\ChhimTiffany\Documents\Visual Studio 2015\Projects\TP3_Serveur\TP3_Serveur\obj\Release\TP3_Serveur.csprojResolveAssemblyReference.cache
+C:\Users\ChhimTiffany\Documents\Visual Studio 2015\Projects\TP3_Serveur\TP3_Serveur\obj\Release\TP3_Serveur.exe
+C:\Users\ChhimTiffany\Documents\Visual Studio 2015\Projects\TP3_Serveur\TP3_Serveur\obj\Release\TP3_Serveur.pdb

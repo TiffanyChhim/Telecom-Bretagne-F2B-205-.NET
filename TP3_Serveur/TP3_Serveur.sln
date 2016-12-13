@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TP3_Serveur", "TP3_Serveur\TP3_Serveur.csproj", "{C1BE97C0-12DE-4FF1-8783-74ACF5CB1B75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TP3_Client", "TP3_Client\TP3_Client.csproj", "{EDF8C386-FD49-4A8D-B3C2-00ACEBF6FEDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TP3_Interface", "TP3_Interface\TP3_Interface.csproj", "{4905C000-1D57-43B0-931C-20C68D437B3F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1BE97C0-12DE-4FF1-8783-74ACF5CB1B75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1BE97C0-12DE-4FF1-8783-74ACF5CB1B75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1BE97C0-12DE-4FF1-8783-74ACF5CB1B75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1BE97C0-12DE-4FF1-8783-74ACF5CB1B75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDF8C386-FD49-4A8D-B3C2-00ACEBF6FEDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDF8C386-FD49-4A8D-B3C2-00ACEBF6FEDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDF8C386-FD49-4A8D-B3C2-00ACEBF6FEDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDF8C386-FD49-4A8D-B3C2-00ACEBF6FEDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4905C000-1D57-43B0-931C-20C68D437B3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4905C000-1D57-43B0-931C-20C68D437B3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4905C000-1D57-43B0-931C-20C68D437B3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4905C000-1D57-43B0-931C-20C68D437B3F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

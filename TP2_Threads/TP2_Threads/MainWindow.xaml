@@ -1,0 +1,32 @@
+﻿<Window x:Class="TP2_Threads.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TP2_Threads"
+        mc:Ignorable="d"
+        Closing="Window_Closing"
+        Title="TP2 Threads" Height="350" Width="525" Background="DarkGray" ResizeMode="NoResize">
+    <Grid>
+        <Menu IsMainMenu="True" x:Name="menu" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="517">
+            <MenuItem Header="Lancement Thread" Name="boutonLancerThread">
+                <MenuItem Header="Ballon" Click="Ballon_Click"/>
+                <MenuItem Header="Premier" Click="Premier_Click"/>
+            </MenuItem>
+            <MenuItem Header="Pause" Name="boutonPause" Click="PauseResume_Click" IsCheckable="True">
+            </MenuItem>
+            <MenuItem Header="Supprimer" Name="boutonSupprimer">
+                <MenuItem Header="Dernier thread créé" Name="boutonSupprDernierThread" Click="DeleteLastThread_Click" IsEnabled="False"/>
+                <MenuItem Header="Dernier thread 'Ballon'" Name="boutonSupprDernierBallon" Click="DeleteLastBallon_Click" IsEnabled="False"/>
+                <MenuItem Header="Dernier thread 'Premier'" Name="boutonSupprDernierPremier" Click="DeleteLastPremier_Click" IsEnabled="False"/>
+                <MenuItem Header="Tous les threads" Name="boutonSupprTousThreads" Click="DeleteAllThreads_Click" IsEnabled="False"/>
+            </MenuItem>
+            <MenuItem Header="Quitter" Name="boutonQuitter" Click="Quit_Click"/>
+        </Menu>
+        <ListBox x:Name="nombreThreadsBox" HorizontalAlignment="Center" Width="150" Margin="185,50,182,0" Height="50" VerticalAlignment="Top">
+            <ListBoxItem>0 thread(s) 'Ballon'</ListBoxItem>
+            <ListBoxItem>0 thread(s) 'Premier'</ListBoxItem>
+        </ListBox>
+        <ListBox x:Name="listeThreadsBox" HorizontalAlignment="Center" Width="250" Margin="135,105,132,104" Height="110" VerticalAlignment="Center"/>
+    </Grid>
+</Window>

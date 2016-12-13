@@ -1,0 +1,16 @@
+C:\Users\ChhimTiffany\Documents\Visual Studio 2015\Projects\TP3_Serveur\TP3_Client\bin\Release\TP3_Client.exe.config
+C:\Users\ChhimTiffany\Documents\Visual Studio 2015\Projects\TP3_Serveur\TP3_Client\bin\Release\TP3_Client.exe
+C:\Users\ChhimTiffany\Documents\Visual Studio 2015\Projects\TP3_Serveur\TP3_Client\bin\Release\TP3_Client.pdb
+C:\Users\ChhimTiffany\Documents\Visual Studio 2015\Projects\TP3_Serveur\TP3_Client\bin\Release\TP3_Interface.dll
+C:\Users\ChhimTiffany\Documents\Visual Studio 2015\Projects\TP3_Serveur\TP3_Client\bin\Release\TP3_Interface.pdb
+C:\Users\ChhimTiffany\Documents\Visual Studio 2015\Projects\TP3_Serveur\TP3_Client\obj\Release\TP3_Client.csprojResolveAssemblyReference.cache
+C:\Users\ChhimTiffany\Documents\Visual Studio 2015\Projects\TP3_Serveur\TP3_Client\obj\Release\MainWindow.g.cs
+C:\Users\ChhimTiffany\Documents\Visual Studio 2015\Projects\TP3_Serveur\TP3_Client\obj\Release\App.g.cs
+C:\Users\ChhimTiffany\Documents\Visual Studio 2015\Projects\TP3_Serveur\TP3_Client\obj\Release\TP3_Client_MarkupCompile.cache
+C:\Users\ChhimTiffany\Documents\Visual Studio 2015\Projects\TP3_Serveur\TP3_Client\obj\Release\TP3_Client_MarkupCompile.lref
+C:\Users\ChhimTiffany\Documents\Visual Studio 2015\Projects\TP3_Serveur\TP3_Client\obj\Release\MainWindow.baml
+C:\Users\ChhimTiffany\Documents\Visual Studio 2015\Projects\TP3_Serveur\TP3_Client\obj\Release\TP3_Client.g.resources
+C:\Users\ChhimTiffany\Documents\Visual Studio 2015\Projects\TP3_Serveur\TP3_Client\obj\Release\TP3_Client.Properties.Resources.resources
+C:\Users\ChhimTiffany\Documents\Visual Studio 2015\Projects\TP3_Serveur\TP3_Client\obj\Release\TP3_Client.csproj.GenerateResource.Cache
+C:\Users\ChhimTiffany\Documents\Visual Studio 2015\Projects\TP3_Serveur\TP3_Client\obj\Release\TP3_Client.exe
+C:\Users\ChhimTiffany\Documents\Visual Studio 2015\Projects\TP3_Serveur\TP3_Client\obj\Release\TP3_Client.pdb

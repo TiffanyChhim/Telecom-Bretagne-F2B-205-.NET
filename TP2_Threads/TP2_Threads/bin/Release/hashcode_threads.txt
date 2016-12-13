@@ -1,0 +1,1410 @@
+
+//  Microsoft (R) .NET Framework IL Disassembler.  Version 4.6.1055.0
+//  Copyright (c) Microsoft Corporation. Tous droits r?serv?s.
+
+
+
+// Metadata version: v4.0.30319
+.assembly extern mscorlib
+{
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )                         // .z\V.4..
+  .ver 4:0:0:0
+}
+.assembly extern PresentationFramework
+{
+  .publickeytoken = (31 BF 38 56 AD 36 4E 35 )                         // 1.8V.6N5
+  .ver 4:0:0:0
+}
+.assembly extern System
+{
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )                         // .z\V.4..
+  .ver 4:0:0:0
+}
+.assembly extern System.Xaml
+{
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )                         // .z\V.4..
+  .ver 4:0:0:0
+}
+.assembly extern PresentationCore
+{
+  .publickeytoken = (31 BF 38 56 AD 36 4E 35 )                         // 1.8V.6N5
+  .ver 4:0:0:0
+}
+.assembly extern BallonPremierLibrary
+{
+  .publickeytoken = (42 37 62 F5 F0 A3 A9 9E )                         // B7b.....
+  .ver 1:0:0:0
+}
+.assembly extern System.Windows.Forms
+{
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )                         // .z\V.4..
+  .ver 4:0:0:0
+}
+.assembly extern WindowsBase
+{
+  .publickeytoken = (31 BF 38 56 AD 36 4E 35 )                         // 1.8V.6N5
+  .ver 4:0:0:0
+}
+.assembly TP2_Threads
+{
+  .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilationRelaxationsAttribute::.ctor(int32) = ( 01 00 08 00 00 00 00 00 ) 
+  .custom instance void [mscorlib]System.Runtime.CompilerServices.RuntimeCompatibilityAttribute::.ctor() = ( 01 00 01 00 54 02 16 57 72 61 70 4E 6F 6E 45 78   // ....T..WrapNonEx
+                                                                                                             63 65 70 74 69 6F 6E 54 68 72 6F 77 73 01 )       // ceptionThrows.
+
+  // --- The following custom attribute is added automatically, do not uncomment -------
+  //  .custom instance void [mscorlib]System.Diagnostics.DebuggableAttribute::.ctor(valuetype [mscorlib]System.Diagnostics.DebuggableAttribute/DebuggingModes) = ( 01 00 02 00 00 00 00 00 ) 
+
+  .custom instance void [mscorlib]System.Reflection.AssemblyTitleAttribute::.ctor(string) = ( 01 00 0B 54 50 32 5F 54 68 72 65 61 64 73 00 00 ) // ...TP2_Threads..
+  .custom instance void [mscorlib]System.Reflection.AssemblyDescriptionAttribute::.ctor(string) = ( 01 00 00 00 00 ) 
+  .custom instance void [mscorlib]System.Reflection.AssemblyConfigurationAttribute::.ctor(string) = ( 01 00 00 00 00 ) 
+  .custom instance void [mscorlib]System.Reflection.AssemblyCompanyAttribute::.ctor(string) = ( 01 00 00 00 00 ) 
+  .custom instance void [mscorlib]System.Reflection.AssemblyProductAttribute::.ctor(string) = ( 01 00 0B 54 50 32 5F 54 68 72 65 61 64 73 00 00 ) // ...TP2_Threads..
+  .custom instance void [mscorlib]System.Reflection.AssemblyCopyrightAttribute::.ctor(string) = ( 01 00 12 43 6F 70 79 72 69 67 68 74 20 C2 A9 20   // ...Copyright .. 
+                                                                                                  20 32 30 31 36 00 00 )                            //  2016..
+  .custom instance void [mscorlib]System.Reflection.AssemblyTrademarkAttribute::.ctor(string) = ( 01 00 00 00 00 ) 
+  .custom instance void [mscorlib]System.Runtime.InteropServices.ComVisibleAttribute::.ctor(bool) = ( 01 00 00 00 00 ) 
+  .custom instance void [PresentationFramework]System.Windows.ThemeInfoAttribute::.ctor(valuetype [PresentationFramework]System.Windows.ResourceDictionaryLocation,
+                                                                                        valuetype [PresentationFramework]System.Windows.ResourceDictionaryLocation) = ( 01 00 00 00 00 00 01 00 00 00 00 00 ) 
+  .custom instance void [mscorlib]System.Reflection.AssemblyFileVersionAttribute::.ctor(string) = ( 01 00 07 31 2E 30 2E 30 2E 30 00 00 )             // ...1.0.0.0..
+  .custom instance void [mscorlib]System.Runtime.Versioning.TargetFrameworkAttribute::.ctor(string) = ( 01 00 1C 2E 4E 45 54 46 72 61 6D 65 77 6F 72 6B   // ....NETFramework
+                                                                                                        2C 56 65 72 73 69 6F 6E 3D 76 34 2E 35 2E 32 01   // ,Version=v4.5.2.
+                                                                                                        00 54 0E 14 46 72 61 6D 65 77 6F 72 6B 44 69 73   // .T..FrameworkDis
+                                                                                                        70 6C 61 79 4E 61 6D 65 14 2E 4E 45 54 20 46 72   // playName..NET Fr
+                                                                                                        61 6D 65 77 6F 72 6B 20 34 2E 35 2E 32 )          // amework 4.5.2
+  .publickey = (00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00   // .$..............
+                00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00   // .$..RSA1........
+                A7 28 2C 5A 5A 30 61 9F E2 48 FB E1 C3 13 42 4E   // .(,ZZ0a..H....BN
+                91 CC 50 45 74 CC DC 63 4C DC C1 63 62 CE D9 35   // ..PEt..cL..cb..5
+                2B 65 85 AD A1 B3 A5 41 BA 47 97 14 39 6A EC 59   // +e.....A.G..9j.Y
+                28 0A AD 21 6B 99 C0 00 AD 83 D5 58 D8 CF AE 32   // (..!k......X...2
+                9B 87 44 B4 05 72 96 E6 BF 09 7D 1B D4 92 96 E7   // ..D..r....}.....
+                82 40 CA 50 FE C3 E5 59 A8 EE 77 E4 15 0F DF 2E   // .@.P...Y..w.....
+                4C FB 6A F1 79 3B 92 0F 25 D9 3F 13 1E D0 AB 6D   // L.j.y;..%.?....m
+                BB AF F1 CE 3F B6 14 24 4D 44 2D 02 0E C1 AF 91 ) // ....?..$MD-.....
+  .hash algorithm 0x00008004
+  .ver 1:0:0:0
+}
+.mresource public TP2_Threads.g.resources
+{
+  // Offset: 0x00000000 Length: 0x00000834
+  // AVERTISSEMENTÿ: le fichier de ressources manag‚ TP2_Threads.g.resources a ‚t‚ cr‚‚
+}
+.mresource public TP2_Threads.Properties.Resources.resources
+{
+  // Offset: 0x00000838 Length: 0x000000B4
+  // AVERTISSEMENTÿ: le fichier de ressources manag‚ TP2_Threads.Properties.Resources.resources a ‚t‚ cr‚‚
+}
+.module TP2_Threads.exe
+// MVID: {7CFC4852-4EBC-4320-88FA-413AE9AF742C}
+.imagebase 0x00400000
+.file alignment 0x00000200
+.stackreserve 0x00100000
+.subsystem 0x0003       // WINDOWS_CUI
+.corflags 0x0002000b    //  ILONLY 32BITPREFERRED
+// Image base: 0x01DB0000
+
+
+// =============== CLASS MEMBERS DECLARATION ===================
+
+.class public auto ansi beforefieldinit TP2_Threads.App
+       extends [PresentationFramework]System.Windows.Application
+{
+  .method public hidebysig instance void 
+          InitializeComponent() cil managed
+  {
+    .custom instance void [mscorlib]System.Diagnostics.DebuggerNonUserCodeAttribute::.ctor() = ( 01 00 00 00 ) 
+    .custom instance void [System]System.CodeDom.Compiler.GeneratedCodeAttribute::.ctor(string,
+                                                                                        string) = ( 01 00 16 50 72 65 73 65 6E 74 61 74 69 6F 6E 42   // ...PresentationB
+                                                                                                    75 69 6C 64 54 61 73 6B 73 07 34 2E 30 2E 30 2E   // uildTasks.4.0.0.
+                                                                                                    30 00 00 )                                        // 0..
+    // Code size       18 (0x12)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  ldstr      "MainWindow.xaml"
+    IL_0006:  ldc.i4.2
+    IL_0007:  newobj     instance void [System]System.Uri::.ctor(string,
+                                                                 valuetype [System]System.UriKind)
+    IL_000c:  call       instance void [PresentationFramework]System.Windows.Application::set_StartupUri(class [System]System.Uri)
+    IL_0011:  ret
+  } // end of method App::InitializeComponent
+
+  .method public hidebysig static void  Main() cil managed
+  {
+    .entrypoint
+    .custom instance void [mscorlib]System.STAThreadAttribute::.ctor() = ( 01 00 00 00 ) 
+    .custom instance void [mscorlib]System.Diagnostics.DebuggerNonUserCodeAttribute::.ctor() = ( 01 00 00 00 ) 
+    .custom instance void [System]System.CodeDom.Compiler.GeneratedCodeAttribute::.ctor(string,
+                                                                                        string) = ( 01 00 16 50 72 65 73 65 6E 74 61 74 69 6F 6E 42   // ...PresentationB
+                                                                                                    75 69 6C 64 54 61 73 6B 73 07 34 2E 30 2E 30 2E   // uildTasks.4.0.0.
+                                                                                                    30 00 00 )                                        // 0..
+    // Code size       18 (0x12)
+    .maxstack  8
+    IL_0000:  newobj     instance void TP2_Threads.App::.ctor()
+    IL_0005:  dup
+    IL_0006:  callvirt   instance void TP2_Threads.App::InitializeComponent()
+    IL_000b:  callvirt   instance int32 [PresentationFramework]System.Windows.Application::Run()
+    IL_0010:  pop
+    IL_0011:  ret
+  } // end of method App::Main
+
+  .method public hidebysig specialname rtspecialname 
+          instance void  .ctor() cil managed
+  {
+    // Code size       7 (0x7)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance void [PresentationFramework]System.Windows.Application::.ctor()
+    IL_0006:  ret
+  } // end of method App::.ctor
+
+} // end of class TP2_Threads.App
+
+.class public auto ansi beforefieldinit TP2_Threads.MainWindow
+       extends [PresentationFramework]System.Windows.Window
+       implements [System.Xaml]System.Windows.Markup.IComponentConnector
+{
+  .class auto ansi sealed nested private beforefieldinit '<>c__DisplayClass4_0'
+         extends [mscorlib]System.Object
+  {
+    .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 ) 
+    .field public object s
+    .field public class [System.Windows.Forms]System.Windows.Forms.FormClosedEventArgs ev
+    .field public class TP2_Threads.MainWindow '<>4__this'
+    .method public hidebysig specialname rtspecialname 
+            instance void  .ctor() cil managed
+    {
+      // Code size       7 (0x7)
+      .maxstack  8
+      IL_0000:  ldarg.0
+      IL_0001:  call       instance void [mscorlib]System.Object::.ctor()
+      IL_0006:  ret
+    } // end of method '<>c__DisplayClass4_0'::.ctor
+
+    .method assembly hidebysig instance void 
+            '<Ballon_Click>b__1'() cil managed
+    {
+      // Code size       24 (0x18)
+      .maxstack  8
+      IL_0000:  ldarg.0
+      IL_0001:  ldfld      class TP2_Threads.MainWindow TP2_Threads.MainWindow/'<>c__DisplayClass4_0'::'<>4__this'
+      IL_0006:  ldarg.0
+      IL_0007:  ldfld      object TP2_Threads.MainWindow/'<>c__DisplayClass4_0'::s
+      IL_000c:  ldarg.0
+      IL_000d:  ldfld      class [System.Windows.Forms]System.Windows.Forms.FormClosedEventArgs TP2_Threads.MainWindow/'<>c__DisplayClass4_0'::ev
+      IL_0012:  call       instance void TP2_Threads.MainWindow::Ballon_CloseEvent(object,
+                                                                                   class [mscorlib]System.EventArgs)
+      IL_0017:  ret
+    } // end of method '<>c__DisplayClass4_0'::'<Ballon_Click>b__1'
+
+  } // end of class '<>c__DisplayClass4_0'
+
+  .class auto ansi sealed nested private beforefieldinit '<>c__DisplayClass4_1'
+         extends [mscorlib]System.Object
+  {
+    .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 ) 
+    .field public class [BallonPremierLibrary]BallonPremierLibrary.Ballon b
+    .field public class TP2_Threads.MainWindow '<>4__this'
+    .method public hidebysig specialname rtspecialname 
+            instance void  .ctor() cil managed
+    {
+      // Code size       7 (0x7)
+      .maxstack  8
+      IL_0000:  ldarg.0
+      IL_0001:  call       instance void [mscorlib]System.Object::.ctor()
+      IL_0006:  ret
+    } // end of method '<>c__DisplayClass4_1'::.ctor
+
+    .method assembly hidebysig instance void 
+            '<Ballon_Click>b__2'() cil managed
+    {
+      // Code size       12 (0xc)
+      .maxstack  8
+      IL_0000:  ldarg.0
+      IL_0001:  ldfld      class [BallonPremierLibrary]BallonPremierLibrary.Ballon TP2_Threads.MainWindow/'<>c__DisplayClass4_1'::b
+      IL_0006:  callvirt   instance void [BallonPremierLibrary]BallonPremierLibrary.Ballon::Go()
+      IL_000b:  ret
+    } // end of method '<>c__DisplayClass4_1'::'<Ballon_Click>b__2'
+
+  } // end of class '<>c__DisplayClass4_1'
+
+  .class auto ansi sealed nested private beforefieldinit '<>c__DisplayClass5_0'
+         extends [mscorlib]System.Object
+  {
+    .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 ) 
+    .field public object s
+    .field public class [System.Windows.Forms]System.Windows.Forms.FormClosedEventArgs ev
+    .field public class TP2_Threads.MainWindow '<>4__this'
+    .method public hidebysig specialname rtspecialname 
+            instance void  .ctor() cil managed
+    {
+      // Code size       7 (0x7)
+      .maxstack  8
+      IL_0000:  ldarg.0
+      IL_0001:  call       instance void [mscorlib]System.Object::.ctor()
+      IL_0006:  ret
+    } // end of method '<>c__DisplayClass5_0'::.ctor
+
+    .method assembly hidebysig instance void 
+            '<Premier_Click>b__1'() cil managed
+    {
+      // Code size       24 (0x18)
+      .maxstack  8
+      IL_0000:  ldarg.0
+      IL_0001:  ldfld      class TP2_Threads.MainWindow TP2_Threads.MainWindow/'<>c__DisplayClass5_0'::'<>4__this'
+      IL_0006:  ldarg.0
+      IL_0007:  ldfld      object TP2_Threads.MainWindow/'<>c__DisplayClass5_0'::s
+      IL_000c:  ldarg.0
+      IL_000d:  ldfld      class [System.Windows.Forms]System.Windows.Forms.FormClosedEventArgs TP2_Threads.MainWindow/'<>c__DisplayClass5_0'::ev
+      IL_0012:  call       instance void TP2_Threads.MainWindow::Premier_CloseEvent(object,
+                                                                                    class [mscorlib]System.EventArgs)
+      IL_0017:  ret
+    } // end of method '<>c__DisplayClass5_0'::'<Premier_Click>b__1'
+
+  } // end of class '<>c__DisplayClass5_0'
+
+  .class auto ansi sealed nested private beforefieldinit '<>c__DisplayClass5_1'
+         extends [mscorlib]System.Object
+  {
+    .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 ) 
+    .field public class [BallonPremierLibrary]BallonPremierLibrary.NombrePremier np
+    .field public class TP2_Threads.MainWindow '<>4__this'
+    .method public hidebysig specialname rtspecialname 
+            instance void  .ctor() cil managed
+    {
+      // Code size       7 (0x7)
+      .maxstack  8
+      IL_0000:  ldarg.0
+      IL_0001:  call       instance void [mscorlib]System.Object::.ctor()
+      IL_0006:  ret
+    } // end of method '<>c__DisplayClass5_1'::.ctor
+
+    .method assembly hidebysig instance void 
+            '<Premier_Click>b__2'() cil managed
+    {
+      // Code size       12 (0xc)
+      .maxstack  8
+      IL_0000:  ldarg.0
+      IL_0001:  ldfld      class [BallonPremierLibrary]BallonPremierLibrary.NombrePremier TP2_Threads.MainWindow/'<>c__DisplayClass5_1'::np
+      IL_0006:  callvirt   instance void [BallonPremierLibrary]BallonPremierLibrary.NombrePremier::ThreadFunction()
+      IL_000b:  ret
+    } // end of method '<>c__DisplayClass5_1'::'<Premier_Click>b__2'
+
+  } // end of class '<>c__DisplayClass5_1'
+
+  .field private class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread> listThreads
+  .field private int32 nbBallon
+  .field private int32 nbPremier
+  .field assembly class [PresentationFramework]System.Windows.Controls.Menu menu
+  .field assembly class [PresentationFramework]System.Windows.Controls.MenuItem boutonLancerThread
+  .field assembly class [PresentationFramework]System.Windows.Controls.MenuItem boutonPause
+  .field assembly class [PresentationFramework]System.Windows.Controls.MenuItem boutonSupprimer
+  .field assembly class [PresentationFramework]System.Windows.Controls.MenuItem boutonSupprDernierThread
+  .field assembly class [PresentationFramework]System.Windows.Controls.MenuItem boutonSupprDernierBallon
+  .field assembly class [PresentationFramework]System.Windows.Controls.MenuItem boutonSupprDernierPremier
+  .field assembly class [PresentationFramework]System.Windows.Controls.MenuItem boutonSupprTousThreads
+  .field assembly class [PresentationFramework]System.Windows.Controls.MenuItem boutonQuitter
+  .field assembly class [PresentationFramework]System.Windows.Controls.ListBox nombreThreadsBox
+  .field assembly class [PresentationFramework]System.Windows.Controls.ListBox listeThreadsBox
+  .field private bool _contentLoaded
+  .method public hidebysig specialname rtspecialname 
+          instance void  .ctor() cil managed
+  {
+    // Code size       24 (0x18)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  newobj     instance void class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread>::.ctor()
+    IL_0006:  stfld      class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread> TP2_Threads.MainWindow::listThreads
+    IL_000b:  ldarg.0
+    IL_000c:  call       instance void [PresentationFramework]System.Windows.Window::.ctor()
+    IL_0011:  ldarg.0
+    IL_0012:  call       instance void TP2_Threads.MainWindow::InitializeComponent()
+    IL_0017:  ret
+  } // end of method MainWindow::.ctor
+
+  .method private hidebysig instance void 
+          Ballon_Click(object sender,
+                       class [PresentationCore]System.Windows.RoutedEventArgs e) cil managed
+  {
+    // Code size       105 (0x69)
+    .maxstack  4
+    .locals init ([0] class [mscorlib]System.Threading.Thread t)
+    IL_0000:  newobj     instance void TP2_Threads.MainWindow/'<>c__DisplayClass4_1'::.ctor()
+    IL_0005:  dup
+    IL_0006:  ldarg.0
+    IL_0007:  stfld      class TP2_Threads.MainWindow TP2_Threads.MainWindow/'<>c__DisplayClass4_1'::'<>4__this'
+    IL_000c:  dup
+    IL_000d:  newobj     instance void [BallonPremierLibrary]BallonPremierLibrary.Ballon::.ctor()
+    IL_0012:  stfld      class [BallonPremierLibrary]BallonPremierLibrary.Ballon TP2_Threads.MainWindow/'<>c__DisplayClass4_1'::b
+    IL_0017:  dup
+    IL_0018:  ldfld      class [BallonPremierLibrary]BallonPremierLibrary.Ballon TP2_Threads.MainWindow/'<>c__DisplayClass4_1'::b
+    IL_001d:  ldarg.0
+    IL_001e:  ldftn      instance void TP2_Threads.MainWindow::'<Ballon_Click>b__4_0'(object,
+                                                                                      class [System.Windows.Forms]System.Windows.Forms.FormClosedEventArgs)
+    IL_0024:  newobj     instance void [System.Windows.Forms]System.Windows.Forms.FormClosedEventHandler::.ctor(object,
+                                                                                                                native int)
+    IL_0029:  callvirt   instance void [System.Windows.Forms]System.Windows.Forms.Form::add_FormClosed(class [System.Windows.Forms]System.Windows.Forms.FormClosedEventHandler)
+    IL_002e:  dup
+    IL_002f:  ldftn      instance void TP2_Threads.MainWindow/'<>c__DisplayClass4_1'::'<Ballon_Click>b__2'()
+    IL_0035:  newobj     instance void [mscorlib]System.Threading.ThreadStart::.ctor(object,
+                                                                                     native int)
+    IL_003a:  newobj     instance void [mscorlib]System.Threading.Thread::.ctor(class [mscorlib]System.Threading.ThreadStart)
+    IL_003f:  stloc.0
+    IL_0040:  ldfld      class [BallonPremierLibrary]BallonPremierLibrary.Ballon TP2_Threads.MainWindow/'<>c__DisplayClass4_1'::b
+    IL_0045:  ldloc.0
+    IL_0046:  callvirt   instance int32 [mscorlib]System.Threading.Thread::get_ManagedThreadId()
+    IL_004b:  stfld      int32 [BallonPremierLibrary]BallonPremierLibrary.Ballon::threadId
+    IL_0050:  ldloc.0
+    IL_0051:  ldstr      "Ballon"
+    IL_0056:  callvirt   instance void [mscorlib]System.Threading.Thread::set_Name(string)
+    IL_005b:  ldloc.0
+    IL_005c:  callvirt   instance void [mscorlib]System.Threading.Thread::Start()
+    IL_0061:  ldarg.0
+    IL_0062:  ldloc.0
+    IL_0063:  call       instance void TP2_Threads.MainWindow::AddThread(class [mscorlib]System.Threading.Thread)
+    IL_0068:  ret
+  } // end of method MainWindow::Ballon_Click
+
+  .method private hidebysig instance void 
+          Premier_Click(object sender,
+                        class [PresentationCore]System.Windows.RoutedEventArgs e) cil managed
+  {
+    // Code size       105 (0x69)
+    .maxstack  4
+    .locals init ([0] class [mscorlib]System.Threading.Thread t)
+    IL_0000:  newobj     instance void TP2_Threads.MainWindow/'<>c__DisplayClass5_1'::.ctor()
+    IL_0005:  dup
+    IL_0006:  ldarg.0
+    IL_0007:  stfld      class TP2_Threads.MainWindow TP2_Threads.MainWindow/'<>c__DisplayClass5_1'::'<>4__this'
+    IL_000c:  dup
+    IL_000d:  newobj     instance void [BallonPremierLibrary]BallonPremierLibrary.NombrePremier::.ctor()
+    IL_0012:  stfld      class [BallonPremierLibrary]BallonPremierLibrary.NombrePremier TP2_Threads.MainWindow/'<>c__DisplayClass5_1'::np
+    IL_0017:  dup
+    IL_0018:  ldfld      class [BallonPremierLibrary]BallonPremierLibrary.NombrePremier TP2_Threads.MainWindow/'<>c__DisplayClass5_1'::np
+    IL_001d:  ldarg.0
+    IL_001e:  ldftn      instance void TP2_Threads.MainWindow::'<Premier_Click>b__5_0'(object,
+                                                                                       class [System.Windows.Forms]System.Windows.Forms.FormClosedEventArgs)
+    IL_0024:  newobj     instance void [System.Windows.Forms]System.Windows.Forms.FormClosedEventHandler::.ctor(object,
+                                                                                                                native int)
+    IL_0029:  callvirt   instance void [System.Windows.Forms]System.Windows.Forms.Form::add_FormClosed(class [System.Windows.Forms]System.Windows.Forms.FormClosedEventHandler)
+    IL_002e:  dup
+    IL_002f:  ldftn      instance void TP2_Threads.MainWindow/'<>c__DisplayClass5_1'::'<Premier_Click>b__2'()
+    IL_0035:  newobj     instance void [mscorlib]System.Threading.ThreadStart::.ctor(object,
+                                                                                     native int)
+    IL_003a:  newobj     instance void [mscorlib]System.Threading.Thread::.ctor(class [mscorlib]System.Threading.ThreadStart)
+    IL_003f:  stloc.0
+    IL_0040:  ldfld      class [BallonPremierLibrary]BallonPremierLibrary.NombrePremier TP2_Threads.MainWindow/'<>c__DisplayClass5_1'::np
+    IL_0045:  ldloc.0
+    IL_0046:  callvirt   instance int32 [mscorlib]System.Threading.Thread::get_ManagedThreadId()
+    IL_004b:  stfld      int32 [BallonPremierLibrary]BallonPremierLibrary.NombrePremier::threadId
+    IL_0050:  ldloc.0
+    IL_0051:  ldstr      "Premier"
+    IL_0056:  callvirt   instance void [mscorlib]System.Threading.Thread::set_Name(string)
+    IL_005b:  ldloc.0
+    IL_005c:  callvirt   instance void [mscorlib]System.Threading.Thread::Start()
+    IL_0061:  ldarg.0
+    IL_0062:  ldloc.0
+    IL_0063:  call       instance void TP2_Threads.MainWindow::AddThread(class [mscorlib]System.Threading.Thread)
+    IL_0068:  ret
+  } // end of method MainWindow::Premier_Click
+
+  .method private hidebysig instance void 
+          PauseResume_Click(object sender,
+                            class [PresentationCore]System.Windows.RoutedEventArgs e) cil managed
+  {
+    // Code size       188 (0xbc)
+    .maxstack  2
+    .locals init ([0] valuetype [mscorlib]System.Collections.Generic.List`1/Enumerator<class [mscorlib]System.Threading.Thread> V_0)
+    IL_0000:  ldarg.0
+    IL_0001:  ldfld      class [PresentationFramework]System.Windows.Controls.MenuItem TP2_Threads.MainWindow::boutonPause
+    IL_0006:  callvirt   instance bool [PresentationFramework]System.Windows.Controls.MenuItem::get_IsChecked()
+    IL_000b:  brfalse.s  IL_0064
+
+    IL_000d:  ldarg.0
+    IL_000e:  ldfld      class [PresentationFramework]System.Windows.Controls.MenuItem TP2_Threads.MainWindow::boutonLancerThread
+    IL_0013:  ldc.i4.0
+    IL_0014:  callvirt   instance void [PresentationCore]System.Windows.UIElement::set_IsEnabled(bool)
+    IL_0019:  ldarg.0
+    IL_001a:  ldfld      class [PresentationFramework]System.Windows.Controls.MenuItem TP2_Threads.MainWindow::boutonSupprimer
+    IL_001f:  ldc.i4.0
+    IL_0020:  callvirt   instance void [PresentationCore]System.Windows.UIElement::set_IsEnabled(bool)
+    IL_0025:  ldarg.0
+    IL_0026:  ldfld      class [PresentationFramework]System.Windows.Controls.MenuItem TP2_Threads.MainWindow::boutonQuitter
+    IL_002b:  ldc.i4.0
+    IL_002c:  callvirt   instance void [PresentationCore]System.Windows.UIElement::set_IsEnabled(bool)
+    IL_0031:  ldarg.0
+    IL_0032:  ldfld      class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread> TP2_Threads.MainWindow::listThreads
+    IL_0037:  callvirt   instance valuetype [mscorlib]System.Collections.Generic.List`1/Enumerator<!0> class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread>::GetEnumerator()
+    IL_003c:  stloc.0
+    .try
+    {
+      IL_003d:  br.s       IL_004b
+
+      IL_003f:  ldloca.s   V_0
+      IL_0041:  call       instance !0 valuetype [mscorlib]System.Collections.Generic.List`1/Enumerator<class [mscorlib]System.Threading.Thread>::get_Current()
+      IL_0046:  callvirt   instance void [mscorlib]System.Threading.Thread::Suspend()
+      IL_004b:  ldloca.s   V_0
+      IL_004d:  call       instance bool valuetype [mscorlib]System.Collections.Generic.List`1/Enumerator<class [mscorlib]System.Threading.Thread>::MoveNext()
+      IL_0052:  brtrue.s   IL_003f
+
+      IL_0054:  leave.s    IL_00bb
+
+    }  // end .try
+    finally
+    {
+      IL_0056:  ldloca.s   V_0
+      IL_0058:  constrained. valuetype [mscorlib]System.Collections.Generic.List`1/Enumerator<class [mscorlib]System.Threading.Thread>
+      IL_005e:  callvirt   instance void [mscorlib]System.IDisposable::Dispose()
+      IL_0063:  endfinally
+    }  // end handler
+    IL_0064:  ldarg.0
+    IL_0065:  ldfld      class [PresentationFramework]System.Windows.Controls.MenuItem TP2_Threads.MainWindow::boutonLancerThread
+    IL_006a:  ldc.i4.1
+    IL_006b:  callvirt   instance void [PresentationCore]System.Windows.UIElement::set_IsEnabled(bool)
+    IL_0070:  ldarg.0
+    IL_0071:  ldfld      class [PresentationFramework]System.Windows.Controls.MenuItem TP2_Threads.MainWindow::boutonSupprimer
+    IL_0076:  ldc.i4.1
+    IL_0077:  callvirt   instance void [PresentationCore]System.Windows.UIElement::set_IsEnabled(bool)
+    IL_007c:  ldarg.0
+    IL_007d:  ldfld      class [PresentationFramework]System.Windows.Controls.MenuItem TP2_Threads.MainWindow::boutonQuitter
+    IL_0082:  ldc.i4.1
+    IL_0083:  callvirt   instance void [PresentationCore]System.Windows.UIElement::set_IsEnabled(bool)
+    IL_0088:  ldarg.0
+    IL_0089:  ldfld      class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread> TP2_Threads.MainWindow::listThreads
+    IL_008e:  callvirt   instance valuetype [mscorlib]System.Collections.Generic.List`1/Enumerator<!0> class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread>::GetEnumerator()
+    IL_0093:  stloc.0
+    .try
+    {
+      IL_0094:  br.s       IL_00a2
+
+      IL_0096:  ldloca.s   V_0
+      IL_0098:  call       instance !0 valuetype [mscorlib]System.Collections.Generic.List`1/Enumerator<class [mscorlib]System.Threading.Thread>::get_Current()
+      IL_009d:  callvirt   instance void [mscorlib]System.Threading.Thread::Resume()
+      IL_00a2:  ldloca.s   V_0
+      IL_00a4:  call       instance bool valuetype [mscorlib]System.Collections.Generic.List`1/Enumerator<class [mscorlib]System.Threading.Thread>::MoveNext()
+      IL_00a9:  brtrue.s   IL_0096
+
+      IL_00ab:  leave.s    IL_00bb
+
+    }  // end .try
+    finally
+    {
+      IL_00ad:  ldloca.s   V_0
+      IL_00af:  constrained. valuetype [mscorlib]System.Collections.Generic.List`1/Enumerator<class [mscorlib]System.Threading.Thread>
+      IL_00b5:  callvirt   instance void [mscorlib]System.IDisposable::Dispose()
+      IL_00ba:  endfinally
+    }  // end handler
+    IL_00bb:  ret
+  } // end of method MainWindow::PauseResume_Click
+
+  .method private hidebysig instance void 
+          DeleteLastThread_Click(object sender,
+                                 class [PresentationCore]System.Windows.RoutedEventArgs e) cil managed
+  {
+    // Code size       57 (0x39)
+    .maxstack  4
+    .locals init ([0] class [mscorlib]System.Threading.Thread t)
+    IL_0000:  ldarg.0
+    IL_0001:  ldfld      class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread> TP2_Threads.MainWindow::listThreads
+    IL_0006:  ldarg.0
+    IL_0007:  ldfld      class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread> TP2_Threads.MainWindow::listThreads
+    IL_000c:  callvirt   instance int32 class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread>::get_Count()
+    IL_0011:  ldc.i4.1
+    IL_0012:  sub
+    IL_0013:  callvirt   instance !0 class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread>::get_Item(int32)
+    IL_0018:  stloc.0
+    IL_0019:  ldarg.0
+    IL_001a:  ldloc.0
+    IL_001b:  callvirt   instance string [mscorlib]System.Threading.Thread::get_Name()
+    IL_0020:  ldarg.0
+    IL_0021:  ldfld      class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread> TP2_Threads.MainWindow::listThreads
+    IL_0026:  callvirt   instance int32 class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread>::get_Count()
+    IL_002b:  ldc.i4.1
+    IL_002c:  sub
+    IL_002d:  call       instance void TP2_Threads.MainWindow::RemoveThread(string,
+                                                                            int32)
+    IL_0032:  ldloc.0
+    IL_0033:  callvirt   instance void [mscorlib]System.Threading.Thread::Abort()
+    IL_0038:  ret
+  } // end of method MainWindow::DeleteLastThread_Click
+
+  .method private hidebysig instance void 
+          DeleteLastBallon_Click(object sender,
+                                 class [PresentationCore]System.Windows.RoutedEventArgs e) cil managed
+  {
+    // Code size       86 (0x56)
+    .maxstack  3
+    .locals init ([0] int32 i,
+             [1] class [mscorlib]System.Threading.Thread t)
+    IL_0000:  ldarg.0
+    IL_0001:  ldfld      class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread> TP2_Threads.MainWindow::listThreads
+    IL_0006:  callvirt   instance int32 class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread>::get_Count()
+    IL_000b:  ldc.i4.1
+    IL_000c:  sub
+    IL_000d:  stloc.0
+    IL_000e:  br.s       IL_0031
+
+    IL_0010:  ldarg.0
+    IL_0011:  ldfld      class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread> TP2_Threads.MainWindow::listThreads
+    IL_0016:  ldloc.0
+    IL_0017:  callvirt   instance !0 class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread>::get_Item(int32)
+    IL_001c:  callvirt   instance string [mscorlib]System.Threading.Thread::get_Name()
+    IL_0021:  ldstr      "Ballon"
+    IL_0026:  call       bool [mscorlib]System.String::op_Equality(string,
+                                                                   string)
+    IL_002b:  brtrue.s   IL_0035
+
+    IL_002d:  ldloc.0
+    IL_002e:  ldc.i4.1
+    IL_002f:  sub
+    IL_0030:  stloc.0
+    IL_0031:  ldloc.0
+    IL_0032:  ldc.i4.0
+    IL_0033:  bge.s      IL_0010
+
+    IL_0035:  ldarg.0
+    IL_0036:  ldfld      class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread> TP2_Threads.MainWindow::listThreads
+    IL_003b:  ldloc.0
+    IL_003c:  callvirt   instance !0 class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread>::get_Item(int32)
+    IL_0041:  stloc.1
+    IL_0042:  ldarg.0
+    IL_0043:  ldloc.1
+    IL_0044:  callvirt   instance string [mscorlib]System.Threading.Thread::get_Name()
+    IL_0049:  ldloc.0
+    IL_004a:  call       instance void TP2_Threads.MainWindow::RemoveThread(string,
+                                                                            int32)
+    IL_004f:  ldloc.1
+    IL_0050:  callvirt   instance void [mscorlib]System.Threading.Thread::Abort()
+    IL_0055:  ret
+  } // end of method MainWindow::DeleteLastBallon_Click
+
+  .method private hidebysig instance void 
+          DeleteLastPremier_Click(object sender,
+                                  class [PresentationCore]System.Windows.RoutedEventArgs e) cil managed
+  {
+    // Code size       86 (0x56)
+    .maxstack  3
+    .locals init ([0] int32 i,
+             [1] class [mscorlib]System.Threading.Thread t)
+    IL_0000:  ldarg.0
+    IL_0001:  ldfld      class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread> TP2_Threads.MainWindow::listThreads
+    IL_0006:  callvirt   instance int32 class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread>::get_Count()
+    IL_000b:  ldc.i4.1
+    IL_000c:  sub
+    IL_000d:  stloc.0
+    IL_000e:  br.s       IL_0031
+
+    IL_0010:  ldarg.0
+    IL_0011:  ldfld      class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread> TP2_Threads.MainWindow::listThreads
+    IL_0016:  ldloc.0
+    IL_0017:  callvirt   instance !0 class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread>::get_Item(int32)
+    IL_001c:  callvirt   instance string [mscorlib]System.Threading.Thread::get_Name()
+    IL_0021:  ldstr      "Premier"
+    IL_0026:  call       bool [mscorlib]System.String::op_Equality(string,
+                                                                   string)
+    IL_002b:  brtrue.s   IL_0035
+
+    IL_002d:  ldloc.0
+    IL_002e:  ldc.i4.1
+    IL_002f:  sub
+    IL_0030:  stloc.0
+    IL_0031:  ldloc.0
+    IL_0032:  ldc.i4.0
+    IL_0033:  bge.s      IL_0010
+
+    IL_0035:  ldarg.0
+    IL_0036:  ldfld      class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread> TP2_Threads.MainWindow::listThreads
+    IL_003b:  ldloc.0
+    IL_003c:  callvirt   instance !0 class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread>::get_Item(int32)
+    IL_0041:  stloc.1
+    IL_0042:  ldarg.0
+    IL_0043:  ldloc.1
+    IL_0044:  callvirt   instance string [mscorlib]System.Threading.Thread::get_Name()
+    IL_0049:  ldloc.0
+    IL_004a:  call       instance void TP2_Threads.MainWindow::RemoveThread(string,
+                                                                            int32)
+    IL_004f:  ldloc.1
+    IL_0050:  callvirt   instance void [mscorlib]System.Threading.Thread::Abort()
+    IL_0055:  ret
+  } // end of method MainWindow::DeleteLastPremier_Click
+
+  .method private hidebysig instance void 
+          DeleteAllThreads_Click(object sender,
+                                 class [PresentationCore]System.Windows.RoutedEventArgs e) cil managed
+  {
+    // Code size       57 (0x39)
+    .maxstack  3
+    .locals init ([0] int32 i,
+             [1] class [mscorlib]System.Threading.Thread t)
+    IL_0000:  ldarg.0
+    IL_0001:  ldfld      class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread> TP2_Threads.MainWindow::listThreads
+    IL_0006:  callvirt   instance int32 class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread>::get_Count()
+    IL_000b:  ldc.i4.1
+    IL_000c:  sub
+    IL_000d:  stloc.0
+    IL_000e:  br.s       IL_0034
+
+    IL_0010:  ldarg.0
+    IL_0011:  ldfld      class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread> TP2_Threads.MainWindow::listThreads
+    IL_0016:  ldloc.0
+    IL_0017:  callvirt   instance !0 class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread>::get_Item(int32)
+    IL_001c:  stloc.1
+    IL_001d:  ldarg.0
+    IL_001e:  ldloc.1
+    IL_001f:  callvirt   instance string [mscorlib]System.Threading.Thread::get_Name()
+    IL_0024:  ldloc.0
+    IL_0025:  call       instance void TP2_Threads.MainWindow::RemoveThread(string,
+                                                                            int32)
+    IL_002a:  ldloc.1
+    IL_002b:  callvirt   instance void [mscorlib]System.Threading.Thread::Abort()
+    IL_0030:  ldloc.0
+    IL_0031:  ldc.i4.1
+    IL_0032:  sub
+    IL_0033:  stloc.0
+    IL_0034:  ldloc.0
+    IL_0035:  ldc.i4.0
+    IL_0036:  bge.s      IL_0010
+
+    IL_0038:  ret
+  } // end of method MainWindow::DeleteAllThreads_Click
+
+  .method private hidebysig instance void 
+          Quit_Click(object sender,
+                     class [PresentationCore]System.Windows.RoutedEventArgs e) cil managed
+  {
+    // Code size       30 (0x1e)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  ldarg.1
+    IL_0002:  ldarg.2
+    IL_0003:  call       instance void TP2_Threads.MainWindow::DeleteAllThreads_Click(object,
+                                                                                      class [PresentationCore]System.Windows.RoutedEventArgs)
+    IL_0008:  ldstr      "Au revoir !"
+    IL_000d:  call       valuetype [PresentationFramework]System.Windows.MessageBoxResult [PresentationFramework]System.Windows.MessageBox::Show(string)
+    IL_0012:  pop
+    IL_0013:  call       class [PresentationFramework]System.Windows.Application [PresentationFramework]System.Windows.Application::get_Current()
+    IL_0018:  callvirt   instance void [PresentationFramework]System.Windows.Application::Shutdown()
+    IL_001d:  ret
+  } // end of method MainWindow::Quit_Click
+
+  .method private hidebysig instance void 
+          Ballon_CloseEvent(object sender,
+                            class [mscorlib]System.EventArgs e) cil managed
+  {
+    // Code size       20 (0x14)
+    .maxstack  2
+    .locals init ([0] class [BallonPremierLibrary]BallonPremierLibrary.Ballon b)
+    IL_0000:  ldarg.1
+    IL_0001:  castclass  [BallonPremierLibrary]BallonPremierLibrary.Ballon
+    IL_0006:  stloc.0
+    IL_0007:  ldarg.0
+    IL_0008:  ldloc.0
+    IL_0009:  ldfld      int32 [BallonPremierLibrary]BallonPremierLibrary.Ballon::threadId
+    IL_000e:  call       instance void TP2_Threads.MainWindow::FindDeadThread(int32)
+    IL_0013:  ret
+  } // end of method MainWindow::Ballon_CloseEvent
+
+  .method private hidebysig instance void 
+          Premier_CloseEvent(object sender,
+                             class [mscorlib]System.EventArgs e) cil managed
+  {
+    // Code size       20 (0x14)
+    .maxstack  2
+    .locals init ([0] class [BallonPremierLibrary]BallonPremierLibrary.NombrePremier np)
+    IL_0000:  ldarg.1
+    IL_0001:  castclass  [BallonPremierLibrary]BallonPremierLibrary.NombrePremier
+    IL_0006:  stloc.0
+    IL_0007:  ldarg.0
+    IL_0008:  ldloc.0
+    IL_0009:  ldfld      int32 [BallonPremierLibrary]BallonPremierLibrary.NombrePremier::threadId
+    IL_000e:  call       instance void TP2_Threads.MainWindow::FindDeadThread(int32)
+    IL_0013:  ret
+  } // end of method MainWindow::Premier_CloseEvent
+
+  .method private hidebysig instance void 
+          AddThread(class [mscorlib]System.Threading.Thread t) cil managed
+  {
+    // Code size       305 (0x131)
+    .maxstack  4
+    .locals init ([0] string V_0)
+    IL_0000:  ldarg.1
+    IL_0001:  callvirt   instance string [mscorlib]System.Threading.Thread::get_Name()
+    IL_0006:  stloc.0
+    IL_0007:  ldloc.0
+    IL_0008:  ldstr      "Ballon"
+    IL_000d:  call       bool [mscorlib]System.String::op_Equality(string,
+                                                                   string)
+    IL_0012:  brtrue.s   IL_0026
+
+    IL_0014:  ldloc.0
+    IL_0015:  ldstr      "Premier"
+    IL_001a:  call       bool [mscorlib]System.String::op_Equality(string,
+                                                                   string)
+    IL_001f:  brtrue.s   IL_009a
+
+    IL_0021:  br         IL_010e
+
+    IL_0026:  ldarg.0
+    IL_0027:  ldfld      class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread> TP2_Threads.MainWindow::listThreads
+    IL_002c:  ldarg.1
+    IL_002d:  callvirt   instance void class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread>::Add(!0)
+    IL_0032:  ldarg.0
+    IL_0033:  ldarg.0
+    IL_0034:  ldfld      int32 TP2_Threads.MainWindow::nbBallon
+    IL_0039:  ldc.i4.1
+    IL_003a:  add
+    IL_003b:  stfld      int32 TP2_Threads.MainWindow::nbBallon
+    IL_0040:  ldarg.0
+    IL_0041:  ldfld      class [PresentationFramework]System.Windows.Controls.ListBox TP2_Threads.MainWindow::nombreThreadsBox
+    IL_0046:  callvirt   instance class [PresentationFramework]System.Windows.Controls.ItemCollection [PresentationFramework]System.Windows.Controls.ItemsControl::get_Items()
+    IL_004b:  ldc.i4.0
+    IL_004c:  ldarg.0
+    IL_004d:  ldfld      int32 TP2_Threads.MainWindow::nbBallon
+    IL_0052:  box        [mscorlib]System.Int32
+    IL_0057:  ldstr      " thread(s) 'Ballon'"
+    IL_005c:  call       string [mscorlib]System.String::Concat(object,
+                                                                object)
+    IL_0061:  callvirt   instance void [PresentationFramework]System.Windows.Controls.ItemCollection::set_Item(int32,
+                                                                                                               object)
+    IL_0066:  ldarg.0
+    IL_0067:  ldfld      class [PresentationFramework]System.Windows.Controls.ListBox TP2_Threads.MainWindow::listeThreadsBox
+    IL_006c:  callvirt   instance class [PresentationFramework]System.Windows.Controls.ItemCollection [PresentationFramework]System.Windows.Controls.ItemsControl::get_Items()
+    IL_0071:  ldstr      "Thread 'Ballon' d'ID "
+    IL_0076:  ldarg.1
+    IL_0077:  callvirt   instance int32 [mscorlib]System.Threading.Thread::get_ManagedThreadId()
+    IL_007c:  box        [mscorlib]System.Int32
+    IL_0081:  call       string [mscorlib]System.String::Concat(object,
+                                                                object)
+    IL_0086:  callvirt   instance int32 [PresentationFramework]System.Windows.Controls.ItemCollection::Add(object)
+    IL_008b:  pop
+    IL_008c:  ldarg.0
+    IL_008d:  ldfld      class [PresentationFramework]System.Windows.Controls.MenuItem TP2_Threads.MainWindow::boutonSupprDernierBallon
+    IL_0092:  ldc.i4.1
+    IL_0093:  callvirt   instance void [PresentationCore]System.Windows.UIElement::set_IsEnabled(bool)
+    IL_0098:  br.s       IL_0118
+
+    IL_009a:  ldarg.0
+    IL_009b:  ldfld      class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread> TP2_Threads.MainWindow::listThreads
+    IL_00a0:  ldarg.1
+    IL_00a1:  callvirt   instance void class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread>::Add(!0)
+    IL_00a6:  ldarg.0
+    IL_00a7:  ldarg.0
+    IL_00a8:  ldfld      int32 TP2_Threads.MainWindow::nbPremier
+    IL_00ad:  ldc.i4.1
+    IL_00ae:  add
+    IL_00af:  stfld      int32 TP2_Threads.MainWindow::nbPremier
+    IL_00b4:  ldarg.0
+    IL_00b5:  ldfld      class [PresentationFramework]System.Windows.Controls.ListBox TP2_Threads.MainWindow::nombreThreadsBox
+    IL_00ba:  callvirt   instance class [PresentationFramework]System.Windows.Controls.ItemCollection [PresentationFramework]System.Windows.Controls.ItemsControl::get_Items()
+    IL_00bf:  ldc.i4.1
+    IL_00c0:  ldarg.0
+    IL_00c1:  ldfld      int32 TP2_Threads.MainWindow::nbPremier
+    IL_00c6:  box        [mscorlib]System.Int32
+    IL_00cb:  ldstr      " thread(s) 'Premier'"
+    IL_00d0:  call       string [mscorlib]System.String::Concat(object,
+                                                                object)
+    IL_00d5:  callvirt   instance void [PresentationFramework]System.Windows.Controls.ItemCollection::set_Item(int32,
+                                                                                                               object)
+    IL_00da:  ldarg.0
+    IL_00db:  ldfld      class [PresentationFramework]System.Windows.Controls.ListBox TP2_Threads.MainWindow::listeThreadsBox
+    IL_00e0:  callvirt   instance class [PresentationFramework]System.Windows.Controls.ItemCollection [PresentationFramework]System.Windows.Controls.ItemsControl::get_Items()
+    IL_00e5:  ldstr      "Thread 'Premier' d'ID "
+    IL_00ea:  ldarg.1
+    IL_00eb:  callvirt   instance int32 [mscorlib]System.Threading.Thread::get_ManagedThreadId()
+    IL_00f0:  box        [mscorlib]System.Int32
+    IL_00f5:  call       string [mscorlib]System.String::Concat(object,
+                                                                object)
+    IL_00fa:  callvirt   instance int32 [PresentationFramework]System.Windows.Controls.ItemCollection::Add(object)
+    IL_00ff:  pop
+    IL_0100:  ldarg.0
+    IL_0101:  ldfld      class [PresentationFramework]System.Windows.Controls.MenuItem TP2_Threads.MainWindow::boutonSupprDernierPremier
+    IL_0106:  ldc.i4.1
+    IL_0107:  callvirt   instance void [PresentationCore]System.Windows.UIElement::set_IsEnabled(bool)
+    IL_010c:  br.s       IL_0118
+
+    IL_010e:  ldstr      bytearray (54 00 68 00 72 00 65 00 61 00 64 00 20 00 6E 00   // T.h.r.e.a.d. .n.
+                                    6F 00 6E 00 20 00 73 00 75 00 70 00 70 00 6F 00   // o.n. .s.u.p.p.o.
+                                    72 00 74 00 E9 00 )                               // r.t...
+    IL_0113:  call       void [mscorlib]System.Console::WriteLine(string)
+    IL_0118:  ldarg.0
+    IL_0119:  ldfld      class [PresentationFramework]System.Windows.Controls.MenuItem TP2_Threads.MainWindow::boutonSupprDernierThread
+    IL_011e:  ldc.i4.1
+    IL_011f:  callvirt   instance void [PresentationCore]System.Windows.UIElement::set_IsEnabled(bool)
+    IL_0124:  ldarg.0
+    IL_0125:  ldfld      class [PresentationFramework]System.Windows.Controls.MenuItem TP2_Threads.MainWindow::boutonSupprTousThreads
+    IL_012a:  ldc.i4.1
+    IL_012b:  callvirt   instance void [PresentationCore]System.Windows.UIElement::set_IsEnabled(bool)
+    IL_0130:  ret
+  } // end of method MainWindow::AddThread
+
+  .method private hidebysig instance void 
+          RemoveThread(string threadType,
+                       int32 index) cil managed
+  {
+    // Code size       326 (0x146)
+    .maxstack  4
+    IL_0000:  ldarg.1
+    IL_0001:  ldstr      "Ballon"
+    IL_0006:  call       bool [mscorlib]System.String::op_Equality(string,
+                                                                   string)
+    IL_000b:  brtrue.s   IL_0022
+
+    IL_000d:  ldarg.1
+    IL_000e:  ldstr      "Premier"
+    IL_0013:  call       bool [mscorlib]System.String::op_Equality(string,
+                                                                   string)
+    IL_0018:  brtrue     IL_009f
+
+    IL_001d:  br         IL_0116
+
+    IL_0022:  ldarg.0
+    IL_0023:  ldfld      class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread> TP2_Threads.MainWindow::listThreads
+    IL_0028:  ldarg.2
+    IL_0029:  callvirt   instance void class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread>::RemoveAt(int32)
+    IL_002e:  ldarg.0
+    IL_002f:  ldarg.0
+    IL_0030:  ldfld      int32 TP2_Threads.MainWindow::nbBallon
+    IL_0035:  ldc.i4.1
+    IL_0036:  sub
+    IL_0037:  stfld      int32 TP2_Threads.MainWindow::nbBallon
+    IL_003c:  ldarg.0
+    IL_003d:  ldfld      class [PresentationFramework]System.Windows.Controls.ListBox TP2_Threads.MainWindow::nombreThreadsBox
+    IL_0042:  callvirt   instance class [PresentationFramework]System.Windows.Controls.ItemCollection [PresentationFramework]System.Windows.Controls.ItemsControl::get_Items()
+    IL_0047:  ldc.i4.0
+    IL_0048:  ldarg.0
+    IL_0049:  ldfld      int32 TP2_Threads.MainWindow::nbBallon
+    IL_004e:  box        [mscorlib]System.Int32
+    IL_0053:  ldstr      " thread(s) 'Ballon'"
+    IL_0058:  call       string [mscorlib]System.String::Concat(object,
+                                                                object)
+    IL_005d:  callvirt   instance void [PresentationFramework]System.Windows.Controls.ItemCollection::set_Item(int32,
+                                                                                                               object)
+    IL_0062:  ldarg.0
+    IL_0063:  ldfld      class [PresentationFramework]System.Windows.Controls.ListBox TP2_Threads.MainWindow::listeThreadsBox
+    IL_0068:  callvirt   instance class [PresentationFramework]System.Windows.Controls.ItemCollection [PresentationFramework]System.Windows.Controls.ItemsControl::get_Items()
+    IL_006d:  ldarg.0
+    IL_006e:  ldfld      class [PresentationFramework]System.Windows.Controls.ListBox TP2_Threads.MainWindow::listeThreadsBox
+    IL_0073:  callvirt   instance class [PresentationFramework]System.Windows.Controls.ItemCollection [PresentationFramework]System.Windows.Controls.ItemsControl::get_Items()
+    IL_0078:  ldarg.2
+    IL_0079:  callvirt   instance object [PresentationFramework]System.Windows.Controls.ItemCollection::get_Item(int32)
+    IL_007e:  callvirt   instance void [PresentationFramework]System.Windows.Controls.ItemCollection::Remove(object)
+    IL_0083:  ldarg.0
+    IL_0084:  ldfld      int32 TP2_Threads.MainWindow::nbBallon
+    IL_0089:  brtrue     IL_0120
+
+    IL_008e:  ldarg.0
+    IL_008f:  ldfld      class [PresentationFramework]System.Windows.Controls.MenuItem TP2_Threads.MainWindow::boutonSupprDernierBallon
+    IL_0094:  ldc.i4.0
+    IL_0095:  callvirt   instance void [PresentationCore]System.Windows.UIElement::set_IsEnabled(bool)
+    IL_009a:  br         IL_0120
+
+    IL_009f:  ldarg.0
+    IL_00a0:  ldfld      class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread> TP2_Threads.MainWindow::listThreads
+    IL_00a5:  ldarg.2
+    IL_00a6:  callvirt   instance void class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread>::RemoveAt(int32)
+    IL_00ab:  ldarg.0
+    IL_00ac:  ldarg.0
+    IL_00ad:  ldfld      int32 TP2_Threads.MainWindow::nbPremier
+    IL_00b2:  ldc.i4.1
+    IL_00b3:  sub
+    IL_00b4:  stfld      int32 TP2_Threads.MainWindow::nbPremier
+    IL_00b9:  ldarg.0
+    IL_00ba:  ldfld      class [PresentationFramework]System.Windows.Controls.ListBox TP2_Threads.MainWindow::nombreThreadsBox
+    IL_00bf:  callvirt   instance class [PresentationFramework]System.Windows.Controls.ItemCollection [PresentationFramework]System.Windows.Controls.ItemsControl::get_Items()
+    IL_00c4:  ldc.i4.1
+    IL_00c5:  ldarg.0
+    IL_00c6:  ldfld      int32 TP2_Threads.MainWindow::nbPremier
+    IL_00cb:  box        [mscorlib]System.Int32
+    IL_00d0:  ldstr      " thread(s) 'Premier'"
+    IL_00d5:  call       string [mscorlib]System.String::Concat(object,
+                                                                object)
+    IL_00da:  callvirt   instance void [PresentationFramework]System.Windows.Controls.ItemCollection::set_Item(int32,
+                                                                                                               object)
+    IL_00df:  ldarg.0
+    IL_00e0:  ldfld      class [PresentationFramework]System.Windows.Controls.ListBox TP2_Threads.MainWindow::listeThreadsBox
+    IL_00e5:  callvirt   instance class [PresentationFramework]System.Windows.Controls.ItemCollection [PresentationFramework]System.Windows.Controls.ItemsControl::get_Items()
+    IL_00ea:  ldarg.0
+    IL_00eb:  ldfld      class [PresentationFramework]System.Windows.Controls.ListBox TP2_Threads.MainWindow::listeThreadsBox
+    IL_00f0:  callvirt   instance class [PresentationFramework]System.Windows.Controls.ItemCollection [PresentationFramework]System.Windows.Controls.ItemsControl::get_Items()
+    IL_00f5:  ldarg.2
+    IL_00f6:  callvirt   instance object [PresentationFramework]System.Windows.Controls.ItemCollection::get_Item(int32)
+    IL_00fb:  callvirt   instance void [PresentationFramework]System.Windows.Controls.ItemCollection::Remove(object)
+    IL_0100:  ldarg.0
+    IL_0101:  ldfld      int32 TP2_Threads.MainWindow::nbPremier
+    IL_0106:  brtrue.s   IL_0120
+
+    IL_0108:  ldarg.0
+    IL_0109:  ldfld      class [PresentationFramework]System.Windows.Controls.MenuItem TP2_Threads.MainWindow::boutonSupprDernierPremier
+    IL_010e:  ldc.i4.0
+    IL_010f:  callvirt   instance void [PresentationCore]System.Windows.UIElement::set_IsEnabled(bool)
+    IL_0114:  br.s       IL_0120
+
+    IL_0116:  ldstr      bytearray (54 00 68 00 72 00 65 00 61 00 64 00 20 00 6E 00   // T.h.r.e.a.d. .n.
+                                    6F 00 6E 00 20 00 73 00 75 00 70 00 70 00 6F 00   // o.n. .s.u.p.p.o.
+                                    72 00 74 00 E9 00 )                               // r.t...
+    IL_011b:  call       void [mscorlib]System.Console::WriteLine(string)
+    IL_0120:  ldarg.0
+    IL_0121:  ldfld      class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread> TP2_Threads.MainWindow::listThreads
+    IL_0126:  callvirt   instance int32 class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread>::get_Count()
+    IL_012b:  brtrue.s   IL_0145
+
+    IL_012d:  ldarg.0
+    IL_012e:  ldfld      class [PresentationFramework]System.Windows.Controls.MenuItem TP2_Threads.MainWindow::boutonSupprDernierThread
+    IL_0133:  ldc.i4.0
+    IL_0134:  callvirt   instance void [PresentationCore]System.Windows.UIElement::set_IsEnabled(bool)
+    IL_0139:  ldarg.0
+    IL_013a:  ldfld      class [PresentationFramework]System.Windows.Controls.MenuItem TP2_Threads.MainWindow::boutonSupprTousThreads
+    IL_013f:  ldc.i4.0
+    IL_0140:  callvirt   instance void [PresentationCore]System.Windows.UIElement::set_IsEnabled(bool)
+    IL_0145:  ret
+  } // end of method MainWindow::RemoveThread
+
+  .method private hidebysig instance void 
+          FindDeadThread(int32 threadId) cil managed
+  {
+    // Code size       80 (0x50)
+    .maxstack  3
+    .locals init ([0] int32 i)
+    IL_0000:  ldc.i4.0
+    IL_0001:  stloc.0
+    IL_0002:  br.s       IL_0041
+
+    IL_0004:  ldarga.s   threadId
+    IL_0006:  call       instance string [mscorlib]System.Int32::ToString()
+    IL_000b:  call       void [mscorlib]System.Console::WriteLine(string)
+    IL_0010:  ldarg.0
+    IL_0011:  ldfld      class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread> TP2_Threads.MainWindow::listThreads
+    IL_0016:  ldloc.0
+    IL_0017:  callvirt   instance !0 class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread>::get_Item(int32)
+    IL_001c:  callvirt   instance int32 [mscorlib]System.Threading.Thread::get_ManagedThreadId()
+    IL_0021:  ldarg.1
+    IL_0022:  bne.un.s   IL_003d
+
+    IL_0024:  ldarg.0
+    IL_0025:  ldarg.0
+    IL_0026:  ldfld      class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread> TP2_Threads.MainWindow::listThreads
+    IL_002b:  ldloc.0
+    IL_002c:  callvirt   instance !0 class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread>::get_Item(int32)
+    IL_0031:  callvirt   instance string [mscorlib]System.Threading.Thread::get_Name()
+    IL_0036:  ldloc.0
+    IL_0037:  call       instance void TP2_Threads.MainWindow::RemoveThread(string,
+                                                                            int32)
+    IL_003c:  ret
+
+    IL_003d:  ldloc.0
+    IL_003e:  ldc.i4.1
+    IL_003f:  add
+    IL_0040:  stloc.0
+    IL_0041:  ldloc.0
+    IL_0042:  ldarg.0
+    IL_0043:  ldfld      class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread> TP2_Threads.MainWindow::listThreads
+    IL_0048:  callvirt   instance int32 class [mscorlib]System.Collections.Generic.List`1<class [mscorlib]System.Threading.Thread>::get_Count()
+    IL_004d:  blt.s      IL_0004
+
+    IL_004f:  ret
+  } // end of method MainWindow::FindDeadThread
+
+  .method public hidebysig newslot virtual final 
+          instance void  InitializeComponent() cil managed
+  {
+    .custom instance void [mscorlib]System.Diagnostics.DebuggerNonUserCodeAttribute::.ctor() = ( 01 00 00 00 ) 
+    .custom instance void [System]System.CodeDom.Compiler.GeneratedCodeAttribute::.ctor(string,
+                                                                                        string) = ( 01 00 16 50 72 65 73 65 6E 74 61 74 69 6F 6E 42   // ...PresentationB
+                                                                                                    75 69 6C 64 54 61 73 6B 73 07 34 2E 30 2E 30 2E   // uildTasks.4.0.0.
+                                                                                                    30 00 00 )                                        // 0..
+    // Code size       36 (0x24)
+    .maxstack  2
+    .locals init ([0] class [System]System.Uri resourceLocater)
+    IL_0000:  ldarg.0
+    IL_0001:  ldfld      bool TP2_Threads.MainWindow::_contentLoaded
+    IL_0006:  brfalse.s  IL_0009
+
+    IL_0008:  ret
+
+    IL_0009:  ldarg.0
+    IL_000a:  ldc.i4.1
+    IL_000b:  stfld      bool TP2_Threads.MainWindow::_contentLoaded
+    IL_0010:  ldstr      "/TP2_Threads;component/mainwindow.xaml"
+    IL_0015:  ldc.i4.2
+    IL_0016:  newobj     instance void [System]System.Uri::.ctor(string,
+                                                                 valuetype [System]System.UriKind)
+    IL_001b:  stloc.0
+    IL_001c:  ldarg.0
+    IL_001d:  ldloc.0
+    IL_001e:  call       void [PresentationFramework]System.Windows.Application::LoadComponent(object,
+                                                                                               class [System]System.Uri)
+    IL_0023:  ret
+  } // end of method MainWindow::InitializeComponent
+
+  .method private hidebysig newslot virtual final 
+          instance void  System.Windows.Markup.IComponentConnector.Connect(int32 connectionId,
+                                                                           object target) cil managed
+  {
+    .custom instance void [mscorlib]System.Diagnostics.DebuggerNonUserCodeAttribute::.ctor() = ( 01 00 00 00 ) 
+    .custom instance void [System]System.CodeDom.Compiler.GeneratedCodeAttribute::.ctor(string,
+                                                                                        string) = ( 01 00 16 50 72 65 73 65 6E 74 61 74 69 6F 6E 42   // ...PresentationB
+                                                                                                    75 69 6C 64 54 61 73 6B 73 07 34 2E 30 2E 30 2E   // uildTasks.4.0.0.
+                                                                                                    30 00 00 )                                        // 0..
+    .custom instance void [System]System.ComponentModel.EditorBrowsableAttribute::.ctor(valuetype [System]System.ComponentModel.EditorBrowsableState) = ( 01 00 01 00 00 00 00 00 ) 
+    .override [System.Xaml]System.Windows.Markup.IComponentConnector::Connect
+    // Code size       402 (0x192)
+    .maxstack  3
+    IL_0000:  ldarg.1
+    IL_0001:  ldc.i4.1
+    IL_0002:  sub
+    IL_0003:  switch     ( 
+                          IL_0041,
+                          IL_004e,
+                          IL_005b,
+                          IL_0073,
+                          IL_008b,
+                          IL_00af,
+                          IL_00bc,
+                          IL_00e0,
+                          IL_0104,
+                          IL_0128,
+                          IL_014c,
+                          IL_0170,
+                          IL_017d)
+    IL_003c:  br         IL_018a
+
+    IL_0041:  ldarg.0
+    IL_0042:  ldarg.2
+    IL_0043:  castclass  [PresentationFramework]System.Windows.Controls.Menu
+    IL_0048:  stfld      class [PresentationFramework]System.Windows.Controls.Menu TP2_Threads.MainWindow::menu
+    IL_004d:  ret
+
+    IL_004e:  ldarg.0
+    IL_004f:  ldarg.2
+    IL_0050:  castclass  [PresentationFramework]System.Windows.Controls.MenuItem
+    IL_0055:  stfld      class [PresentationFramework]System.Windows.Controls.MenuItem TP2_Threads.MainWindow::boutonLancerThread
+    IL_005a:  ret
+
+    IL_005b:  ldarg.2
+    IL_005c:  castclass  [PresentationFramework]System.Windows.Controls.MenuItem
+    IL_0061:  ldarg.0
+    IL_0062:  ldftn      instance void TP2_Threads.MainWindow::Ballon_Click(object,
+                                                                            class [PresentationCore]System.Windows.RoutedEventArgs)
+    IL_0068:  newobj     instance void [PresentationCore]System.Windows.RoutedEventHandler::.ctor(object,
+                                                                                                  native int)
+    IL_006d:  callvirt   instance void [PresentationFramework]System.Windows.Controls.MenuItem::add_Click(class [PresentationCore]System.Windows.RoutedEventHandler)
+    IL_0072:  ret
+
+    IL_0073:  ldarg.2
+    IL_0074:  castclass  [PresentationFramework]System.Windows.Controls.MenuItem
+    IL_0079:  ldarg.0
+    IL_007a:  ldftn      instance void TP2_Threads.MainWindow::Premier_Click(object,
+                                                                             class [PresentationCore]System.Windows.RoutedEventArgs)
+    IL_0080:  newobj     instance void [PresentationCore]System.Windows.RoutedEventHandler::.ctor(object,
+                                                                                                  native int)
+    IL_0085:  callvirt   instance void [PresentationFramework]System.Windows.Controls.MenuItem::add_Click(class [PresentationCore]System.Windows.RoutedEventHandler)
+    IL_008a:  ret
+
+    IL_008b:  ldarg.0
+    IL_008c:  ldarg.2
+    IL_008d:  castclass  [PresentationFramework]System.Windows.Controls.MenuItem
+    IL_0092:  stfld      class [PresentationFramework]System.Windows.Controls.MenuItem TP2_Threads.MainWindow::boutonPause
+    IL_0097:  ldarg.0
+    IL_0098:  ldfld      class [PresentationFramework]System.Windows.Controls.MenuItem TP2_Threads.MainWindow::boutonPause
+    IL_009d:  ldarg.0
+    IL_009e:  ldftn      instance void TP2_Threads.MainWindow::PauseResume_Click(object,
+                                                                                 class [PresentationCore]System.Windows.RoutedEventArgs)
+    IL_00a4:  newobj     instance void [PresentationCore]System.Windows.RoutedEventHandler::.ctor(object,
+                                                                                                  native int)
+    IL_00a9:  callvirt   instance void [PresentationFramework]System.Windows.Controls.MenuItem::add_Click(class [PresentationCore]System.Windows.RoutedEventHandler)
+    IL_00ae:  ret
+
+    IL_00af:  ldarg.0
+    IL_00b0:  ldarg.2
+    IL_00b1:  castclass  [PresentationFramework]System.Windows.Controls.MenuItem
+    IL_00b6:  stfld      class [PresentationFramework]System.Windows.Controls.MenuItem TP2_Threads.MainWindow::boutonSupprimer
+    IL_00bb:  ret
+
+    IL_00bc:  ldarg.0
+    IL_00bd:  ldarg.2
+    IL_00be:  castclass  [PresentationFramework]System.Windows.Controls.MenuItem
+    IL_00c3:  stfld      class [PresentationFramework]System.Windows.Controls.MenuItem TP2_Threads.MainWindow::boutonSupprDernierThread
+    IL_00c8:  ldarg.0
+    IL_00c9:  ldfld      class [PresentationFramework]System.Windows.Controls.MenuItem TP2_Threads.MainWindow::boutonSupprDernierThread
+    IL_00ce:  ldarg.0
+    IL_00cf:  ldftn      instance void TP2_Threads.MainWindow::DeleteLastThread_Click(object,
+                                                                                      class [PresentationCore]System.Windows.RoutedEventArgs)
+    IL_00d5:  newobj     instance void [PresentationCore]System.Windows.RoutedEventHandler::.ctor(object,
+                                                                                                  native int)
+    IL_00da:  callvirt   instance void [PresentationFramework]System.Windows.Controls.MenuItem::add_Click(class [PresentationCore]System.Windows.RoutedEventHandler)
+    IL_00df:  ret
+
+    IL_00e0:  ldarg.0
+    IL_00e1:  ldarg.2
+    IL_00e2:  castclass  [PresentationFramework]System.Windows.Controls.MenuItem
+    IL_00e7:  stfld      class [PresentationFramework]System.Windows.Controls.MenuItem TP2_Threads.MainWindow::boutonSupprDernierBallon
+    IL_00ec:  ldarg.0
+    IL_00ed:  ldfld      class [PresentationFramework]System.Windows.Controls.MenuItem TP2_Threads.MainWindow::boutonSupprDernierBallon
+    IL_00f2:  ldarg.0
+    IL_00f3:  ldftn      instance void TP2_Threads.MainWindow::DeleteLastBallon_Click(object,
+                                                                                      class [PresentationCore]System.Windows.RoutedEventArgs)
+    IL_00f9:  newobj     instance void [PresentationCore]System.Windows.RoutedEventHandler::.ctor(object,
+                                                                                                  native int)
+    IL_00fe:  callvirt   instance void [PresentationFramework]System.Windows.Controls.MenuItem::add_Click(class [PresentationCore]System.Windows.RoutedEventHandler)
+    IL_0103:  ret
+
+    IL_0104:  ldarg.0
+    IL_0105:  ldarg.2
+    IL_0106:  castclass  [PresentationFramework]System.Windows.Controls.MenuItem
+    IL_010b:  stfld      class [PresentationFramework]System.Windows.Controls.MenuItem TP2_Threads.MainWindow::boutonSupprDernierPremier
+    IL_0110:  ldarg.0
+    IL_0111:  ldfld      class [PresentationFramework]System.Windows.Controls.MenuItem TP2_Threads.MainWindow::boutonSupprDernierPremier
+    IL_0116:  ldarg.0
+    IL_0117:  ldftn      instance void TP2_Threads.MainWindow::DeleteLastPremier_Click(object,
+                                                                                       class [PresentationCore]System.Windows.RoutedEventArgs)
+    IL_011d:  newobj     instance void [PresentationCore]System.Windows.RoutedEventHandler::.ctor(object,
+                                                                                                  native int)
+    IL_0122:  callvirt   instance void [PresentationFramework]System.Windows.Controls.MenuItem::add_Click(class [PresentationCore]System.Windows.RoutedEventHandler)
+    IL_0127:  ret
+
+    IL_0128:  ldarg.0
+    IL_0129:  ldarg.2
+    IL_012a:  castclass  [PresentationFramework]System.Windows.Controls.MenuItem
+    IL_012f:  stfld      class [PresentationFramework]System.Windows.Controls.MenuItem TP2_Threads.MainWindow::boutonSupprTousThreads
+    IL_0134:  ldarg.0
+    IL_0135:  ldfld      class [PresentationFramework]System.Windows.Controls.MenuItem TP2_Threads.MainWindow::boutonSupprTousThreads
+    IL_013a:  ldarg.0
+    IL_013b:  ldftn      instance void TP2_Threads.MainWindow::DeleteAllThreads_Click(object,
+                                                                                      class [PresentationCore]System.Windows.RoutedEventArgs)
+    IL_0141:  newobj     instance void [PresentationCore]System.Windows.RoutedEventHandler::.ctor(object,
+                                                                                                  native int)
+    IL_0146:  callvirt   instance void [PresentationFramework]System.Windows.Controls.MenuItem::add_Click(class [PresentationCore]System.Windows.RoutedEventHandler)
+    IL_014b:  ret
+
+    IL_014c:  ldarg.0
+    IL_014d:  ldarg.2
+    IL_014e:  castclass  [PresentationFramework]System.Windows.Controls.MenuItem
+    IL_0153:  stfld      class [PresentationFramework]System.Windows.Controls.MenuItem TP2_Threads.MainWindow::boutonQuitter
+    IL_0158:  ldarg.0
+    IL_0159:  ldfld      class [PresentationFramework]System.Windows.Controls.MenuItem TP2_Threads.MainWindow::boutonQuitter
+    IL_015e:  ldarg.0
+    IL_015f:  ldftn      instance void TP2_Threads.MainWindow::Quit_Click(object,
+                                                                          class [PresentationCore]System.Windows.RoutedEventArgs)
+    IL_0165:  newobj     instance void [PresentationCore]System.Windows.RoutedEventHandler::.ctor(object,
+                                                                                                  native int)
+    IL_016a:  callvirt   instance void [PresentationFramework]System.Windows.Controls.MenuItem::add_Click(class [PresentationCore]System.Windows.RoutedEventHandler)
+    IL_016f:  ret
+
+    IL_0170:  ldarg.0
+    IL_0171:  ldarg.2
+    IL_0172:  castclass  [PresentationFramework]System.Windows.Controls.ListBox
+    IL_0177:  stfld      class [PresentationFramework]System.Windows.Controls.ListBox TP2_Threads.MainWindow::nombreThreadsBox
+    IL_017c:  ret
+
+    IL_017d:  ldarg.0
+    IL_017e:  ldarg.2
+    IL_017f:  castclass  [PresentationFramework]System.Windows.Controls.ListBox
+    IL_0184:  stfld      class [PresentationFramework]System.Windows.Controls.ListBox TP2_Threads.MainWindow::listeThreadsBox
+    IL_0189:  ret
+
+    IL_018a:  ldarg.0
+    IL_018b:  ldc.i4.1
+    IL_018c:  stfld      bool TP2_Threads.MainWindow::_contentLoaded
+    IL_0191:  ret
+  } // end of method MainWindow::System.Windows.Markup.IComponentConnector.Connect
+
+  .method private hidebysig instance void 
+          '<Ballon_Click>b__4_0'(object s,
+                                 class [System.Windows.Forms]System.Windows.Forms.FormClosedEventArgs ev) cil managed
+  {
+    .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 ) 
+    // Code size       62 (0x3e)
+    .maxstack  3
+    .locals init ([0] class TP2_Threads.MainWindow/'<>c__DisplayClass4_0' 'CS$<>8__locals0')
+    IL_0000:  newobj     instance void TP2_Threads.MainWindow/'<>c__DisplayClass4_0'::.ctor()
+    IL_0005:  stloc.0
+    IL_0006:  ldloc.0
+    IL_0007:  ldarg.0
+    IL_0008:  stfld      class TP2_Threads.MainWindow TP2_Threads.MainWindow/'<>c__DisplayClass4_0'::'<>4__this'
+    IL_000d:  ldloc.0
+    IL_000e:  ldarg.1
+    IL_000f:  stfld      object TP2_Threads.MainWindow/'<>c__DisplayClass4_0'::s
+    IL_0014:  ldloc.0
+    IL_0015:  ldarg.2
+    IL_0016:  stfld      class [System.Windows.Forms]System.Windows.Forms.FormClosedEventArgs TP2_Threads.MainWindow/'<>c__DisplayClass4_0'::ev
+    IL_001b:  call       class [PresentationFramework]System.Windows.Application [PresentationFramework]System.Windows.Application::get_Current()
+    IL_0020:  callvirt   instance class [WindowsBase]System.Windows.Threading.Dispatcher [WindowsBase]System.Windows.Threading.DispatcherObject::get_Dispatcher()
+    IL_0025:  ldloc.0
+    IL_0026:  ldftn      instance void TP2_Threads.MainWindow/'<>c__DisplayClass4_0'::'<Ballon_Click>b__1'()
+    IL_002c:  newobj     instance void [mscorlib]System.Action::.ctor(object,
+                                                                      native int)
+    IL_0031:  ldc.i4.0
+    IL_0032:  newarr     [mscorlib]System.Object
+    IL_0037:  callvirt   instance class [WindowsBase]System.Windows.Threading.DispatcherOperation [WindowsBase]System.Windows.Threading.Dispatcher::BeginInvoke(class [mscorlib]System.Delegate,
+                                                                                                                                                                object[])
+    IL_003c:  pop
+    IL_003d:  ret
+  } // end of method MainWindow::'<Ballon_Click>b__4_0'
+
+  .method private hidebysig instance void 
+          '<Premier_Click>b__5_0'(object s,
+                                  class [System.Windows.Forms]System.Windows.Forms.FormClosedEventArgs ev) cil managed
+  {
+    .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 ) 
+    // Code size       62 (0x3e)
+    .maxstack  3
+    .locals init ([0] class TP2_Threads.MainWindow/'<>c__DisplayClass5_0' 'CS$<>8__locals0')
+    IL_0000:  newobj     instance void TP2_Threads.MainWindow/'<>c__DisplayClass5_0'::.ctor()
+    IL_0005:  stloc.0
+    IL_0006:  ldloc.0
+    IL_0007:  ldarg.0
+    IL_0008:  stfld      class TP2_Threads.MainWindow TP2_Threads.MainWindow/'<>c__DisplayClass5_0'::'<>4__this'
+    IL_000d:  ldloc.0
+    IL_000e:  ldarg.1
+    IL_000f:  stfld      object TP2_Threads.MainWindow/'<>c__DisplayClass5_0'::s
+    IL_0014:  ldloc.0
+    IL_0015:  ldarg.2
+    IL_0016:  stfld      class [System.Windows.Forms]System.Windows.Forms.FormClosedEventArgs TP2_Threads.MainWindow/'<>c__DisplayClass5_0'::ev
+    IL_001b:  call       class [PresentationFramework]System.Windows.Application [PresentationFramework]System.Windows.Application::get_Current()
+    IL_0020:  callvirt   instance class [WindowsBase]System.Windows.Threading.Dispatcher [WindowsBase]System.Windows.Threading.DispatcherObject::get_Dispatcher()
+    IL_0025:  ldloc.0
+    IL_0026:  ldftn      instance void TP2_Threads.MainWindow/'<>c__DisplayClass5_0'::'<Premier_Click>b__1'()
+    IL_002c:  newobj     instance void [mscorlib]System.Action::.ctor(object,
+                                                                      native int)
+    IL_0031:  ldc.i4.0
+    IL_0032:  newarr     [mscorlib]System.Object
+    IL_0037:  callvirt   instance class [WindowsBase]System.Windows.Threading.DispatcherOperation [WindowsBase]System.Windows.Threading.Dispatcher::BeginInvoke(class [mscorlib]System.Delegate,
+                                                                                                                                                                object[])
+    IL_003c:  pop
+    IL_003d:  ret
+  } // end of method MainWindow::'<Premier_Click>b__5_0'
+
+} // end of class TP2_Threads.MainWindow
+
+.class private auto ansi beforefieldinit TP2_Threads.Properties.Resources
+       extends [mscorlib]System.Object
+{
+  .custom instance void [System]System.CodeDom.Compiler.GeneratedCodeAttribute::.ctor(string,
+                                                                                      string) = ( 01 00 33 53 79 73 74 65 6D 2E 52 65 73 6F 75 72   // ..3System.Resour
+                                                                                                  63 65 73 2E 54 6F 6F 6C 73 2E 53 74 72 6F 6E 67   // ces.Tools.Strong
+                                                                                                  6C 79 54 79 70 65 64 52 65 73 6F 75 72 63 65 42   // lyTypedResourceB
+                                                                                                  75 69 6C 64 65 72 07 34 2E 30 2E 30 2E 30 00 00 ) // uilder.4.0.0.0..
+  .custom instance void [mscorlib]System.Diagnostics.DebuggerNonUserCodeAttribute::.ctor() = ( 01 00 00 00 ) 
+  .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 ) 
+  .field private static class [mscorlib]System.Resources.ResourceManager resourceMan
+  .field private static class [mscorlib]System.Globalization.CultureInfo resourceCulture
+  .method assembly hidebysig specialname rtspecialname 
+          instance void  .ctor() cil managed
+  {
+    // Code size       7 (0x7)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance void [mscorlib]System.Object::.ctor()
+    IL_0006:  ret
+  } // end of method Resources::.ctor
+
+  .method assembly hidebysig specialname static 
+          class [mscorlib]System.Resources.ResourceManager 
+          get_ResourceManager() cil managed
+  {
+    // Code size       43 (0x2b)
+    .maxstack  8
+    IL_0000:  ldsfld     class [mscorlib]System.Resources.ResourceManager TP2_Threads.Properties.Resources::resourceMan
+    IL_0005:  brtrue.s   IL_0025
+
+    IL_0007:  ldstr      "TP2_Threads.Properties.Resources"
+    IL_000c:  ldtoken    TP2_Threads.Properties.Resources
+    IL_0011:  call       class [mscorlib]System.Type [mscorlib]System.Type::GetTypeFromHandle(valuetype [mscorlib]System.RuntimeTypeHandle)
+    IL_0016:  callvirt   instance class [mscorlib]System.Reflection.Assembly [mscorlib]System.Type::get_Assembly()
+    IL_001b:  newobj     instance void [mscorlib]System.Resources.ResourceManager::.ctor(string,
+                                                                                         class [mscorlib]System.Reflection.Assembly)
+    IL_0020:  stsfld     class [mscorlib]System.Resources.ResourceManager TP2_Threads.Properties.Resources::resourceMan
+    IL_0025:  ldsfld     class [mscorlib]System.Resources.ResourceManager TP2_Threads.Properties.Resources::resourceMan
+    IL_002a:  ret
+  } // end of method Resources::get_ResourceManager
+
+  .method assembly hidebysig specialname static 
+          class [mscorlib]System.Globalization.CultureInfo 
+          get_Culture() cil managed
+  {
+    // Code size       6 (0x6)
+    .maxstack  8
+    IL_0000:  ldsfld     class [mscorlib]System.Globalization.CultureInfo TP2_Threads.Properties.Resources::resourceCulture
+    IL_0005:  ret
+  } // end of method Resources::get_Culture
+
+  .method assembly hidebysig specialname static 
+          void  set_Culture(class [mscorlib]System.Globalization.CultureInfo 'value') cil managed
+  {
+    // Code size       7 (0x7)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  stsfld     class [mscorlib]System.Globalization.CultureInfo TP2_Threads.Properties.Resources::resourceCulture
+    IL_0006:  ret
+  } // end of method Resources::set_Culture
+
+  .property class [mscorlib]System.Resources.ResourceManager
+          ResourceManager()
+  {
+    .custom instance void [System]System.ComponentModel.EditorBrowsableAttribute::.ctor(valuetype [System]System.ComponentModel.EditorBrowsableState) = ( 01 00 02 00 00 00 00 00 ) 
+    .get class [mscorlib]System.Resources.ResourceManager TP2_Threads.Properties.Resources::get_ResourceManager()
+  } // end of property Resources::ResourceManager
+  .property class [mscorlib]System.Globalization.CultureInfo
+          Culture()
+  {
+    .custom instance void [System]System.ComponentModel.EditorBrowsableAttribute::.ctor(valuetype [System]System.ComponentModel.EditorBrowsableState) = ( 01 00 02 00 00 00 00 00 ) 
+    .get class [mscorlib]System.Globalization.CultureInfo TP2_Threads.Properties.Resources::get_Culture()
+    .set void TP2_Threads.Properties.Resources::set_Culture(class [mscorlib]System.Globalization.CultureInfo)
+  } // end of property Resources::Culture
+} // end of class TP2_Threads.Properties.Resources
+
+.class private auto ansi sealed beforefieldinit TP2_Threads.Properties.Settings
+       extends [System]System.Configuration.ApplicationSettingsBase
+{
+  .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 ) 
+  .custom instance void [System]System.CodeDom.Compiler.GeneratedCodeAttribute::.ctor(string,
+                                                                                      string) = ( 01 00 4B 4D 69 63 72 6F 73 6F 66 74 2E 56 69 73   // ..KMicrosoft.Vis
+                                                                                                  75 61 6C 53 74 75 64 69 6F 2E 45 64 69 74 6F 72   // ualStudio.Editor
+                                                                                                  73 2E 53 65 74 74 69 6E 67 73 44 65 73 69 67 6E   // s.SettingsDesign
+                                                                                                  65 72 2E 53 65 74 74 69 6E 67 73 53 69 6E 67 6C   // er.SettingsSingl
+                                                                                                  65 46 69 6C 65 47 65 6E 65 72 61 74 6F 72 08 31   // eFileGenerator.1
+                                                                                                  31 2E 30 2E 30 2E 30 00 00 )                      // 1.0.0.0..
+  .field private static class TP2_Threads.Properties.Settings defaultInstance
+  .method public hidebysig specialname static 
+          class TP2_Threads.Properties.Settings 
+          get_Default() cil managed
+  {
+    // Code size       6 (0x6)
+    .maxstack  8
+    IL_0000:  ldsfld     class TP2_Threads.Properties.Settings TP2_Threads.Properties.Settings::defaultInstance
+    IL_0005:  ret
+  } // end of method Settings::get_Default
+
+  .method public hidebysig specialname rtspecialname 
+          instance void  .ctor() cil managed
+  {
+    // Code size       7 (0x7)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance void [System]System.Configuration.ApplicationSettingsBase::.ctor()
+    IL_0006:  ret
+  } // end of method Settings::.ctor
+
+  .method private hidebysig specialname rtspecialname static 
+          void  .cctor() cil managed
+  {
+    // Code size       21 (0x15)
+    .maxstack  8
+    IL_0000:  newobj     instance void TP2_Threads.Properties.Settings::.ctor()
+    IL_0005:  call       class [System]System.Configuration.SettingsBase [System]System.Configuration.SettingsBase::Synchronized(class [System]System.Configuration.SettingsBase)
+    IL_000a:  castclass  TP2_Threads.Properties.Settings
+    IL_000f:  stsfld     class TP2_Threads.Properties.Settings TP2_Threads.Properties.Settings::defaultInstance
+    IL_0014:  ret
+  } // end of method Settings::.cctor
+
+  .property class TP2_Threads.Properties.Settings
+          Default()
+  {
+    .get class TP2_Threads.Properties.Settings TP2_Threads.Properties.Settings::get_Default()
+  } // end of property Settings::Default
+} // end of class TP2_Threads.Properties.Settings
+
+
+// =============================================================
+
+// *********** DISASSEMBLY COMPLETE ***********************
+// AVERTISSEMENTÿ: le fichier de ressources Win32 hashcode_threads.res a ‚t‚ cr‚‚

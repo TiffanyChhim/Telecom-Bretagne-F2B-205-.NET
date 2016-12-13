@@ -1,0 +1,16 @@
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP2_Threads\TP2_Threads\bin\Debug\TP2_Threads.exe.config
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP2_Threads\TP2_Threads\bin\Debug\TP2_Threads.exe
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP2_Threads\TP2_Threads\bin\Debug\TP2_Threads.pdb
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP2_Threads\TP2_Threads\obj\Debug\MainWindow.g.cs
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP2_Threads\TP2_Threads\obj\Debug\App.g.cs
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP2_Threads\TP2_Threads\obj\Debug\TP2_Threads_MarkupCompile.cache
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP2_Threads\TP2_Threads\obj\Debug\TP2_Threads_MarkupCompile.lref
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP2_Threads\TP2_Threads\obj\Debug\MainWindow.baml
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP2_Threads\TP2_Threads\obj\Debug\TP2_Threads.g.resources
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP2_Threads\TP2_Threads\obj\Debug\TP2_Threads.Properties.Resources.resources
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP2_Threads\TP2_Threads\obj\Debug\TP2_Threads.csproj.GenerateResource.Cache
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP2_Threads\TP2_Threads\obj\Debug\TP2_Threads.exe
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP2_Threads\TP2_Threads\obj\Debug\TP2_Threads.pdb
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP2_Threads\TP2_Threads\obj\Debug\TP2_Threads.csprojResolveAssemblyReference.cache
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP2_Threads\TP2_Threads\bin\Debug\BallonPremierLibrary.dll
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP2_Threads\TP2_Threads\bin\Debug\BallonPremierLibrary.pdb

@@ -1,0 +1,623 @@
+
+//  Microsoft (R) .NET Framework IL Disassembler.  Version 4.6.1055.0
+//  Copyright (c) Microsoft Corporation. Tous droits r?serv?s.
+
+
+
+// Metadata version: v4.0.30319
+.assembly extern mscorlib
+{
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )                         // .z\V.4..
+  .ver 4:0:0:0
+}
+.assembly extern System.Windows.Forms
+{
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )                         // .z\V.4..
+  .ver 4:0:0:0
+}
+.assembly extern System
+{
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )                         // .z\V.4..
+  .ver 4:0:0:0
+}
+.assembly extern System.Drawing
+{
+  .publickeytoken = (B0 3F 5F 7F 11 D5 0A 3A )                         // .?_....:
+  .ver 4:0:0:0
+}
+.assembly BallonPremierLibrary
+{
+  .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilationRelaxationsAttribute::.ctor(int32) = ( 01 00 08 00 00 00 00 00 ) 
+  .custom instance void [mscorlib]System.Runtime.CompilerServices.RuntimeCompatibilityAttribute::.ctor() = ( 01 00 01 00 54 02 16 57 72 61 70 4E 6F 6E 45 78   // ....T..WrapNonEx
+                                                                                                             63 65 70 74 69 6F 6E 54 68 72 6F 77 73 01 )       // ceptionThrows.
+
+  // --- The following custom attribute is added automatically, do not uncomment -------
+  //  .custom instance void [mscorlib]System.Diagnostics.DebuggableAttribute::.ctor(valuetype [mscorlib]System.Diagnostics.DebuggableAttribute/DebuggingModes) = ( 01 00 02 00 00 00 00 00 ) 
+
+  .custom instance void [mscorlib]System.Reflection.AssemblyTitleAttribute::.ctor(string) = ( 01 00 14 42 61 6C 6C 6F 6E 50 72 65 6D 69 65 72   // ...BallonPremier
+                                                                                              4C 69 62 72 61 72 79 00 00 )                      // Library..
+  .custom instance void [mscorlib]System.Reflection.AssemblyDescriptionAttribute::.ctor(string) = ( 01 00 00 00 00 ) 
+  .custom instance void [mscorlib]System.Reflection.AssemblyConfigurationAttribute::.ctor(string) = ( 01 00 00 00 00 ) 
+  .custom instance void [mscorlib]System.Reflection.AssemblyCompanyAttribute::.ctor(string) = ( 01 00 00 00 00 ) 
+  .custom instance void [mscorlib]System.Reflection.AssemblyProductAttribute::.ctor(string) = ( 01 00 14 42 61 6C 6C 6F 6E 50 72 65 6D 69 65 72   // ...BallonPremier
+                                                                                                4C 69 62 72 61 72 79 00 00 )                      // Library..
+  .custom instance void [mscorlib]System.Reflection.AssemblyCopyrightAttribute::.ctor(string) = ( 01 00 12 43 6F 70 79 72 69 67 68 74 20 C2 A9 20   // ...Copyright .. 
+                                                                                                  20 32 30 31 36 00 00 )                            //  2016..
+  .custom instance void [mscorlib]System.Reflection.AssemblyTrademarkAttribute::.ctor(string) = ( 01 00 00 00 00 ) 
+  .custom instance void [mscorlib]System.Runtime.InteropServices.ComVisibleAttribute::.ctor(bool) = ( 01 00 00 00 00 ) 
+  .custom instance void [mscorlib]System.Runtime.InteropServices.GuidAttribute::.ctor(string) = ( 01 00 24 62 32 30 31 33 64 63 34 2D 30 61 63 37   // ..$b2013dc4-0ac7
+                                                                                                  2D 34 37 30 33 2D 61 65 33 33 2D 39 31 61 35 34   // -4703-ae33-91a54
+                                                                                                  38 62 61 31 37 36 61 00 00 )                      // 8ba176a..
+  .custom instance void [mscorlib]System.Reflection.AssemblyFileVersionAttribute::.ctor(string) = ( 01 00 07 31 2E 30 2E 30 2E 30 00 00 )             // ...1.0.0.0..
+  .custom instance void [mscorlib]System.Runtime.Versioning.TargetFrameworkAttribute::.ctor(string) = ( 01 00 1C 2E 4E 45 54 46 72 61 6D 65 77 6F 72 6B   // ....NETFramework
+                                                                                                        2C 56 65 72 73 69 6F 6E 3D 76 34 2E 35 2E 32 01   // ,Version=v4.5.2.
+                                                                                                        00 54 0E 14 46 72 61 6D 65 77 6F 72 6B 44 69 73   // .T..FrameworkDis
+                                                                                                        70 6C 61 79 4E 61 6D 65 14 2E 4E 45 54 20 46 72   // playName..NET Fr
+                                                                                                        61 6D 65 77 6F 72 6B 20 34 2E 35 2E 32 )          // amework 4.5.2
+  .publickey = (00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00   // .$..............
+                00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00   // .$..RSA1........
+                D3 B0 07 77 23 58 B6 61 7E B3 18 00 4D B5 A1 6F   // ...w#X.a~...M..o
+                E1 6B D7 B8 EF 76 2A 0E 3A A0 F3 C8 F9 52 D1 B9   // .k...v*.:....R..
+                DA 29 4F 5A C4 72 89 8A 32 AE 5B DF 28 6D B6 A4   // .)OZ.r..2.[.(m..
+                C4 08 F7 DC F9 7D 01 D5 D7 4B 60 5C EC B7 1A 14   // .....}...K`\....
+                28 B8 53 B2 B3 32 C1 44 AA 78 A6 FE 25 E8 5F BB   // (.S..2.D.x..%._.
+                C2 08 D0 54 B2 85 32 5D 37 39 6C D5 74 7B 28 50   // ...T..2]79l.t{(P
+                A6 2C 77 94 35 1C 85 AA BA 76 3A 40 08 BC 28 31   // .,w.5....v:@..(1
+                90 A5 04 7E 52 01 E5 6C 2A A1 76 C3 70 19 05 BA ) // ...~R..l*.v.p...
+  .hash algorithm 0x00008004
+  .ver 1:0:0:0
+}
+.module BallonPremierLibrary.dll
+// MVID: {1364503D-B142-4EE5-8E61-23C36C717C66}
+.imagebase 0x10000000
+.file alignment 0x00000200
+.stackreserve 0x00100000
+.subsystem 0x0003       // WINDOWS_CUI
+.corflags 0x00000009    //  ILONLY
+// Image base: 0x00550000
+
+
+// =============== CLASS MEMBERS DECLARATION ===================
+
+.class public auto ansi beforefieldinit BallonPremierLibrary.Ballon
+       extends [System.Windows.Forms]System.Windows.Forms.Form
+{
+  .field public int32 rayon
+  .field public class [System.Windows.Forms]System.Windows.Forms.Timer x1
+  .field public class [System.Windows.Forms]System.Windows.Forms.Timer x2
+  .field private class [System.Windows.Forms]System.Windows.Forms.MainMenu mainMenu1
+  .field private class [System.Windows.Forms]System.Windows.Forms.MenuItem menuItem1
+  .field private class [System.Windows.Forms]System.Windows.Forms.MenuItem menuItem2
+  .field private class [System.Windows.Forms]System.Windows.Forms.MenuItem menuItem3
+  .field private class [System.Windows.Forms]System.Windows.Forms.MenuItem menuItem7
+  .field private class [System]System.ComponentModel.Container components
+  .field public int32 threadId
+  .method public hidebysig specialname rtspecialname 
+          instance void  .ctor() cil managed
+  {
+    // Code size       114 (0x72)
+    .maxstack  3
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance void [System.Windows.Forms]System.Windows.Forms.Form::.ctor()
+    IL_0006:  ldarg.0
+    IL_0007:  call       instance void BallonPremierLibrary.Ballon::InitializeComponent()
+    IL_000c:  ldarg.0
+    IL_000d:  ldc.i4.0
+    IL_000e:  stfld      int32 BallonPremierLibrary.Ballon::rayon
+    IL_0013:  ldarg.0
+    IL_0014:  newobj     instance void [System.Windows.Forms]System.Windows.Forms.Timer::.ctor()
+    IL_0019:  stfld      class [System.Windows.Forms]System.Windows.Forms.Timer BallonPremierLibrary.Ballon::x1
+    IL_001e:  ldarg.0
+    IL_001f:  ldfld      class [System.Windows.Forms]System.Windows.Forms.Timer BallonPremierLibrary.Ballon::x1
+    IL_0024:  ldarg.0
+    IL_0025:  ldftn      instance void BallonPremierLibrary.Ballon::AugmenterRayon(object,
+                                                                                   class [mscorlib]System.EventArgs)
+    IL_002b:  newobj     instance void [mscorlib]System.EventHandler::.ctor(object,
+                                                                            native int)
+    IL_0030:  callvirt   instance void [System.Windows.Forms]System.Windows.Forms.Timer::add_Tick(class [mscorlib]System.EventHandler)
+    IL_0035:  ldarg.0
+    IL_0036:  ldfld      class [System.Windows.Forms]System.Windows.Forms.Timer BallonPremierLibrary.Ballon::x1
+    IL_003b:  ldc.i4.s   30
+    IL_003d:  callvirt   instance void [System.Windows.Forms]System.Windows.Forms.Timer::set_Interval(int32)
+    IL_0042:  ldarg.0
+    IL_0043:  newobj     instance void [System.Windows.Forms]System.Windows.Forms.Timer::.ctor()
+    IL_0048:  stfld      class [System.Windows.Forms]System.Windows.Forms.Timer BallonPremierLibrary.Ballon::x2
+    IL_004d:  ldarg.0
+    IL_004e:  ldfld      class [System.Windows.Forms]System.Windows.Forms.Timer BallonPremierLibrary.Ballon::x2
+    IL_0053:  ldarg.0
+    IL_0054:  ldftn      instance void BallonPremierLibrary.Ballon::BaisserRayon(object,
+                                                                                 class [mscorlib]System.EventArgs)
+    IL_005a:  newobj     instance void [mscorlib]System.EventHandler::.ctor(object,
+                                                                            native int)
+    IL_005f:  callvirt   instance void [System.Windows.Forms]System.Windows.Forms.Timer::add_Tick(class [mscorlib]System.EventHandler)
+    IL_0064:  ldarg.0
+    IL_0065:  ldfld      class [System.Windows.Forms]System.Windows.Forms.Timer BallonPremierLibrary.Ballon::x2
+    IL_006a:  ldc.i4.s   30
+    IL_006c:  callvirt   instance void [System.Windows.Forms]System.Windows.Forms.Timer::set_Interval(int32)
+    IL_0071:  ret
+  } // end of method Ballon::.ctor
+
+  .method family hidebysig virtual instance void 
+          Dispose(bool disposing) cil managed
+  {
+    // Code size       30 (0x1e)
+    .maxstack  8
+    IL_0000:  ldarg.1
+    IL_0001:  brfalse.s  IL_0016
+
+    IL_0003:  ldarg.0
+    IL_0004:  ldfld      class [System]System.ComponentModel.Container BallonPremierLibrary.Ballon::components
+    IL_0009:  brfalse.s  IL_0016
+
+    IL_000b:  ldarg.0
+    IL_000c:  ldfld      class [System]System.ComponentModel.Container BallonPremierLibrary.Ballon::components
+    IL_0011:  callvirt   instance void [System]System.ComponentModel.Container::Dispose()
+    IL_0016:  ldarg.0
+    IL_0017:  ldarg.1
+    IL_0018:  call       instance void [System.Windows.Forms]System.Windows.Forms.Form::Dispose(bool)
+    IL_001d:  ret
+  } // end of method Ballon::Dispose
+
+  .method private hidebysig instance void 
+          InitializeComponent() cil managed
+  {
+    // Code size       388 (0x184)
+    .maxstack  5
+    IL_0000:  ldarg.0
+    IL_0001:  newobj     instance void [System.Windows.Forms]System.Windows.Forms.MainMenu::.ctor()
+    IL_0006:  stfld      class [System.Windows.Forms]System.Windows.Forms.MainMenu BallonPremierLibrary.Ballon::mainMenu1
+    IL_000b:  ldarg.0
+    IL_000c:  newobj     instance void [System.Windows.Forms]System.Windows.Forms.MenuItem::.ctor()
+    IL_0011:  stfld      class [System.Windows.Forms]System.Windows.Forms.MenuItem BallonPremierLibrary.Ballon::menuItem1
+    IL_0016:  ldarg.0
+    IL_0017:  newobj     instance void [System.Windows.Forms]System.Windows.Forms.MenuItem::.ctor()
+    IL_001c:  stfld      class [System.Windows.Forms]System.Windows.Forms.MenuItem BallonPremierLibrary.Ballon::menuItem2
+    IL_0021:  ldarg.0
+    IL_0022:  newobj     instance void [System.Windows.Forms]System.Windows.Forms.MenuItem::.ctor()
+    IL_0027:  stfld      class [System.Windows.Forms]System.Windows.Forms.MenuItem BallonPremierLibrary.Ballon::menuItem3
+    IL_002c:  ldarg.0
+    IL_002d:  newobj     instance void [System.Windows.Forms]System.Windows.Forms.MenuItem::.ctor()
+    IL_0032:  stfld      class [System.Windows.Forms]System.Windows.Forms.MenuItem BallonPremierLibrary.Ballon::menuItem7
+    IL_0037:  ldarg.0
+    IL_0038:  ldfld      class [System.Windows.Forms]System.Windows.Forms.MainMenu BallonPremierLibrary.Ballon::mainMenu1
+    IL_003d:  callvirt   instance class [System.Windows.Forms]System.Windows.Forms.Menu/MenuItemCollection [System.Windows.Forms]System.Windows.Forms.Menu::get_MenuItems()
+    IL_0042:  ldc.i4.2
+    IL_0043:  newarr     [System.Windows.Forms]System.Windows.Forms.MenuItem
+    IL_0048:  dup
+    IL_0049:  ldc.i4.0
+    IL_004a:  ldarg.0
+    IL_004b:  ldfld      class [System.Windows.Forms]System.Windows.Forms.MenuItem BallonPremierLibrary.Ballon::menuItem1
+    IL_0050:  stelem.ref
+    IL_0051:  dup
+    IL_0052:  ldc.i4.1
+    IL_0053:  ldarg.0
+    IL_0054:  ldfld      class [System.Windows.Forms]System.Windows.Forms.MenuItem BallonPremierLibrary.Ballon::menuItem7
+    IL_0059:  stelem.ref
+    IL_005a:  callvirt   instance void [System.Windows.Forms]System.Windows.Forms.Menu/MenuItemCollection::AddRange(class [System.Windows.Forms]System.Windows.Forms.MenuItem[])
+    IL_005f:  ldarg.0
+    IL_0060:  ldfld      class [System.Windows.Forms]System.Windows.Forms.MenuItem BallonPremierLibrary.Ballon::menuItem1
+    IL_0065:  ldc.i4.0
+    IL_0066:  callvirt   instance void [System.Windows.Forms]System.Windows.Forms.MenuItem::set_Index(int32)
+    IL_006b:  ldarg.0
+    IL_006c:  ldfld      class [System.Windows.Forms]System.Windows.Forms.MenuItem BallonPremierLibrary.Ballon::menuItem1
+    IL_0071:  callvirt   instance class [System.Windows.Forms]System.Windows.Forms.Menu/MenuItemCollection [System.Windows.Forms]System.Windows.Forms.Menu::get_MenuItems()
+    IL_0076:  ldc.i4.2
+    IL_0077:  newarr     [System.Windows.Forms]System.Windows.Forms.MenuItem
+    IL_007c:  dup
+    IL_007d:  ldc.i4.0
+    IL_007e:  ldarg.0
+    IL_007f:  ldfld      class [System.Windows.Forms]System.Windows.Forms.MenuItem BallonPremierLibrary.Ballon::menuItem2
+    IL_0084:  stelem.ref
+    IL_0085:  dup
+    IL_0086:  ldc.i4.1
+    IL_0087:  ldarg.0
+    IL_0088:  ldfld      class [System.Windows.Forms]System.Windows.Forms.MenuItem BallonPremierLibrary.Ballon::menuItem3
+    IL_008d:  stelem.ref
+    IL_008e:  callvirt   instance void [System.Windows.Forms]System.Windows.Forms.Menu/MenuItemCollection::AddRange(class [System.Windows.Forms]System.Windows.Forms.MenuItem[])
+    IL_0093:  ldarg.0
+    IL_0094:  ldfld      class [System.Windows.Forms]System.Windows.Forms.MenuItem BallonPremierLibrary.Ballon::menuItem1
+    IL_0099:  ldstr      "Action"
+    IL_009e:  callvirt   instance void [System.Windows.Forms]System.Windows.Forms.MenuItem::set_Text(string)
+    IL_00a3:  ldarg.0
+    IL_00a4:  ldfld      class [System.Windows.Forms]System.Windows.Forms.MenuItem BallonPremierLibrary.Ballon::menuItem2
+    IL_00a9:  ldc.i4.0
+    IL_00aa:  callvirt   instance void [System.Windows.Forms]System.Windows.Forms.MenuItem::set_Index(int32)
+    IL_00af:  ldarg.0
+    IL_00b0:  ldfld      class [System.Windows.Forms]System.Windows.Forms.MenuItem BallonPremierLibrary.Ballon::menuItem2
+    IL_00b5:  ldstr      "Gonfler"
+    IL_00ba:  callvirt   instance void [System.Windows.Forms]System.Windows.Forms.MenuItem::set_Text(string)
+    IL_00bf:  ldarg.0
+    IL_00c0:  ldfld      class [System.Windows.Forms]System.Windows.Forms.MenuItem BallonPremierLibrary.Ballon::menuItem2
+    IL_00c5:  ldarg.0
+    IL_00c6:  ldftn      instance void BallonPremierLibrary.Ballon::menuItem2_Click(object,
+                                                                                    class [mscorlib]System.EventArgs)
+    IL_00cc:  newobj     instance void [mscorlib]System.EventHandler::.ctor(object,
+                                                                            native int)
+    IL_00d1:  callvirt   instance void [System.Windows.Forms]System.Windows.Forms.MenuItem::add_Click(class [mscorlib]System.EventHandler)
+    IL_00d6:  ldarg.0
+    IL_00d7:  ldfld      class [System.Windows.Forms]System.Windows.Forms.MenuItem BallonPremierLibrary.Ballon::menuItem3
+    IL_00dc:  ldc.i4.1
+    IL_00dd:  callvirt   instance void [System.Windows.Forms]System.Windows.Forms.MenuItem::set_Index(int32)
+    IL_00e2:  ldarg.0
+    IL_00e3:  ldfld      class [System.Windows.Forms]System.Windows.Forms.MenuItem BallonPremierLibrary.Ballon::menuItem3
+    IL_00e8:  ldstr      "Degonfler"
+    IL_00ed:  callvirt   instance void [System.Windows.Forms]System.Windows.Forms.MenuItem::set_Text(string)
+    IL_00f2:  ldarg.0
+    IL_00f3:  ldfld      class [System.Windows.Forms]System.Windows.Forms.MenuItem BallonPremierLibrary.Ballon::menuItem3
+    IL_00f8:  ldarg.0
+    IL_00f9:  ldftn      instance void BallonPremierLibrary.Ballon::menuItem3_Click(object,
+                                                                                    class [mscorlib]System.EventArgs)
+    IL_00ff:  newobj     instance void [mscorlib]System.EventHandler::.ctor(object,
+                                                                            native int)
+    IL_0104:  callvirt   instance void [System.Windows.Forms]System.Windows.Forms.MenuItem::add_Click(class [mscorlib]System.EventHandler)
+    IL_0109:  ldarg.0
+    IL_010a:  ldfld      class [System.Windows.Forms]System.Windows.Forms.MenuItem BallonPremierLibrary.Ballon::menuItem7
+    IL_010f:  ldc.i4.1
+    IL_0110:  callvirt   instance void [System.Windows.Forms]System.Windows.Forms.MenuItem::set_Index(int32)
+    IL_0115:  ldarg.0
+    IL_0116:  ldfld      class [System.Windows.Forms]System.Windows.Forms.MenuItem BallonPremierLibrary.Ballon::menuItem7
+    IL_011b:  ldstr      ""
+    IL_0120:  callvirt   instance void [System.Windows.Forms]System.Windows.Forms.MenuItem::set_Text(string)
+    IL_0125:  ldarg.0
+    IL_0126:  ldc.i4.6
+    IL_0127:  ldc.i4.s   15
+    IL_0129:  newobj     instance void [System.Drawing]System.Drawing.Size::.ctor(int32,
+                                                                                  int32)
+    IL_012e:  callvirt   instance void [System.Windows.Forms]System.Windows.Forms.Form::set_AutoScaleBaseSize(valuetype [System.Drawing]System.Drawing.Size)
+    IL_0133:  ldarg.0
+    IL_0134:  ldc.i4     0x15e
+    IL_0139:  ldc.i4     0x152
+    IL_013e:  newobj     instance void [System.Drawing]System.Drawing.Size::.ctor(int32,
+                                                                                  int32)
+    IL_0143:  call       instance void [System.Windows.Forms]System.Windows.Forms.Form::set_ClientSize(valuetype [System.Drawing]System.Drawing.Size)
+    IL_0148:  ldarg.0
+    IL_0149:  ldc.i4     0xc8
+    IL_014e:  ldc.i4.s   50
+    IL_0150:  newobj     instance void [System.Drawing]System.Drawing.Point::.ctor(int32,
+                                                                                   int32)
+    IL_0155:  call       instance void [System.Windows.Forms]System.Windows.Forms.Form::set_Location(valuetype [System.Drawing]System.Drawing.Point)
+    IL_015a:  ldarg.0
+    IL_015b:  ldarg.0
+    IL_015c:  ldfld      class [System.Windows.Forms]System.Windows.Forms.MainMenu BallonPremierLibrary.Ballon::mainMenu1
+    IL_0161:  call       instance void [System.Windows.Forms]System.Windows.Forms.Form::set_Menu(class [System.Windows.Forms]System.Windows.Forms.MainMenu)
+    IL_0166:  ldarg.0
+    IL_0167:  ldstr      "Ballon"
+    IL_016c:  call       instance void [System.Windows.Forms]System.Windows.Forms.Control::set_Name(string)
+    IL_0171:  ldarg.0
+    IL_0172:  ldc.i4.0
+    IL_0173:  call       instance void [System.Windows.Forms]System.Windows.Forms.Form::set_StartPosition(valuetype [System.Windows.Forms]System.Windows.Forms.FormStartPosition)
+    IL_0178:  ldarg.0
+    IL_0179:  ldstr      " Ballons"
+    IL_017e:  callvirt   instance void [System.Windows.Forms]System.Windows.Forms.Control::set_Text(string)
+    IL_0183:  ret
+  } // end of method Ballon::InitializeComponent
+
+  .method family hidebysig virtual instance void 
+          OnPaint(class [System.Windows.Forms]System.Windows.Forms.PaintEventArgs e) cil managed
+  {
+    // Code size       23 (0x17)
+    .maxstack  8
+    IL_0000:  ldarg.1
+    IL_0001:  callvirt   instance class [System.Drawing]System.Drawing.Graphics [System.Windows.Forms]System.Windows.Forms.PaintEventArgs::get_Graphics()
+    IL_0006:  call       class [System.Drawing]System.Drawing.Brush [System.Drawing]System.Drawing.Brushes::get_White()
+    IL_000b:  ldarg.0
+    IL_000c:  call       instance valuetype [System.Drawing]System.Drawing.Rectangle [System.Windows.Forms]System.Windows.Forms.Control::get_ClientRectangle()
+    IL_0011:  callvirt   instance void [System.Drawing]System.Drawing.Graphics::FillRectangle(class [System.Drawing]System.Drawing.Brush,
+                                                                                              valuetype [System.Drawing]System.Drawing.Rectangle)
+    IL_0016:  ret
+  } // end of method Ballon::OnPaint
+
+  .method private hidebysig instance void 
+          menuItem2_Click(object sender,
+                          class [mscorlib]System.EventArgs e) cil managed
+  {
+    // Code size       45 (0x2d)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance class [System.Drawing]System.Drawing.Graphics [System.Windows.Forms]System.Windows.Forms.Control::CreateGraphics()
+    IL_0006:  call       class [System.Drawing]System.Drawing.Brush [System.Drawing]System.Drawing.Brushes::get_White()
+    IL_000b:  ldarg.0
+    IL_000c:  call       instance valuetype [System.Drawing]System.Drawing.Rectangle [System.Windows.Forms]System.Windows.Forms.Control::get_ClientRectangle()
+    IL_0011:  callvirt   instance void [System.Drawing]System.Drawing.Graphics::FillRectangle(class [System.Drawing]System.Drawing.Brush,
+                                                                                              valuetype [System.Drawing]System.Drawing.Rectangle)
+    IL_0016:  ldarg.0
+    IL_0017:  ldfld      class [System.Windows.Forms]System.Windows.Forms.Timer BallonPremierLibrary.Ballon::x1
+    IL_001c:  callvirt   instance void [System.Windows.Forms]System.Windows.Forms.Timer::Start()
+    IL_0021:  ldarg.0
+    IL_0022:  ldfld      class [System.Windows.Forms]System.Windows.Forms.Timer BallonPremierLibrary.Ballon::x2
+    IL_0027:  callvirt   instance void [System.Windows.Forms]System.Windows.Forms.Timer::Stop()
+    IL_002c:  ret
+  } // end of method Ballon::menuItem2_Click
+
+  .method public hidebysig instance void 
+          AugmenterRayon(object sender,
+                         class [mscorlib]System.EventArgs e) cil managed
+  {
+    // Code size       159 (0x9f)
+    .maxstack  7
+    .locals init ([0] class [System.Drawing]System.Drawing.Graphics g,
+             [1] valuetype [System.Drawing]System.Drawing.Rectangle V_1)
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance class [System.Drawing]System.Drawing.Graphics [System.Windows.Forms]System.Windows.Forms.Control::CreateGraphics()
+    IL_0006:  stloc.0
+    IL_0007:  ldarg.0
+    IL_0008:  ldfld      int32 BallonPremierLibrary.Ballon::rayon
+    IL_000d:  ldarg.0
+    IL_000e:  call       instance valuetype [System.Drawing]System.Drawing.Rectangle [System.Windows.Forms]System.Windows.Forms.Control::get_ClientRectangle()
+    IL_0013:  stloc.1
+    IL_0014:  ldloca.s   V_1
+    IL_0016:  call       instance int32 [System.Drawing]System.Drawing.Rectangle::get_Width()
+    IL_001b:  ldc.i4.2
+    IL_001c:  div
+    IL_001d:  bge.s      IL_0088
+
+    IL_001f:  ldloc.0
+    IL_0020:  call       class [System.Drawing]System.Drawing.Brush [System.Drawing]System.Drawing.Brushes::get_White()
+    IL_0025:  ldarg.0
+    IL_0026:  call       instance valuetype [System.Drawing]System.Drawing.Rectangle [System.Windows.Forms]System.Windows.Forms.Control::get_ClientRectangle()
+    IL_002b:  callvirt   instance void [System.Drawing]System.Drawing.Graphics::FillRectangle(class [System.Drawing]System.Drawing.Brush,
+                                                                                              valuetype [System.Drawing]System.Drawing.Rectangle)
+    IL_0030:  ldloc.0
+    IL_0031:  call       class [System.Drawing]System.Drawing.Brush [System.Drawing]System.Drawing.Brushes::get_Red()
+    IL_0036:  ldarg.0
+    IL_0037:  call       instance valuetype [System.Drawing]System.Drawing.Rectangle [System.Windows.Forms]System.Windows.Forms.Control::get_ClientRectangle()
+    IL_003c:  stloc.1
+    IL_003d:  ldloca.s   V_1
+    IL_003f:  call       instance int32 [System.Drawing]System.Drawing.Rectangle::get_Width()
+    IL_0044:  ldc.i4.2
+    IL_0045:  div
+    IL_0046:  ldarg.0
+    IL_0047:  ldfld      int32 BallonPremierLibrary.Ballon::rayon
+    IL_004c:  sub
+    IL_004d:  ldarg.0
+    IL_004e:  call       instance valuetype [System.Drawing]System.Drawing.Rectangle [System.Windows.Forms]System.Windows.Forms.Control::get_ClientRectangle()
+    IL_0053:  stloc.1
+    IL_0054:  ldloca.s   V_1
+    IL_0056:  call       instance int32 [System.Drawing]System.Drawing.Rectangle::get_Width()
+    IL_005b:  ldc.i4.2
+    IL_005c:  div
+    IL_005d:  ldarg.0
+    IL_005e:  ldfld      int32 BallonPremierLibrary.Ballon::rayon
+    IL_0063:  sub
+    IL_0064:  ldc.i4.2
+    IL_0065:  ldarg.0
+    IL_0066:  ldfld      int32 BallonPremierLibrary.Ballon::rayon
+    IL_006b:  mul
+    IL_006c:  ldc.i4.2
+    IL_006d:  ldarg.0
+    IL_006e:  ldfld      int32 BallonPremierLibrary.Ballon::rayon
+    IL_0073:  mul
+    IL_0074:  callvirt   instance void [System.Drawing]System.Drawing.Graphics::FillEllipse(class [System.Drawing]System.Drawing.Brush,
+                                                                                            int32,
+                                                                                            int32,
+                                                                                            int32,
+                                                                                            int32)
+    IL_0079:  ldarg.0
+    IL_007a:  ldarg.0
+    IL_007b:  ldfld      int32 BallonPremierLibrary.Ballon::rayon
+    IL_0080:  ldc.i4.1
+    IL_0081:  add
+    IL_0082:  stfld      int32 BallonPremierLibrary.Ballon::rayon
+    IL_0087:  ret
+
+    IL_0088:  ldarg.0
+    IL_0089:  ldfld      class [System.Windows.Forms]System.Windows.Forms.Timer BallonPremierLibrary.Ballon::x2
+    IL_008e:  callvirt   instance void [System.Windows.Forms]System.Windows.Forms.Timer::Start()
+    IL_0093:  ldarg.0
+    IL_0094:  ldfld      class [System.Windows.Forms]System.Windows.Forms.Timer BallonPremierLibrary.Ballon::x1
+    IL_0099:  callvirt   instance void [System.Windows.Forms]System.Windows.Forms.Timer::Stop()
+    IL_009e:  ret
+  } // end of method Ballon::AugmenterRayon
+
+  .method public hidebysig instance void 
+          BaisserRayon(object sender,
+                       class [mscorlib]System.EventArgs e) cil managed
+  {
+    // Code size       161 (0xa1)
+    .maxstack  7
+    .locals init ([0] class [System.Drawing]System.Drawing.Graphics g,
+             [1] valuetype [System.Drawing]System.Drawing.Rectangle V_1)
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance class [System.Drawing]System.Drawing.Graphics [System.Windows.Forms]System.Windows.Forms.Control::CreateGraphics()
+    IL_0006:  stloc.0
+    IL_0007:  ldloc.0
+    IL_0008:  call       class [System.Drawing]System.Drawing.Brush [System.Drawing]System.Drawing.Brushes::get_White()
+    IL_000d:  ldarg.0
+    IL_000e:  call       instance valuetype [System.Drawing]System.Drawing.Rectangle [System.Windows.Forms]System.Windows.Forms.Control::get_ClientRectangle()
+    IL_0013:  callvirt   instance void [System.Drawing]System.Drawing.Graphics::FillRectangle(class [System.Drawing]System.Drawing.Brush,
+                                                                                              valuetype [System.Drawing]System.Drawing.Rectangle)
+    IL_0018:  ldarg.0
+    IL_0019:  ldfld      int32 BallonPremierLibrary.Ballon::rayon
+    IL_001e:  ldc.i4.0
+    IL_001f:  ble.s      IL_008a
+
+    IL_0021:  ldloc.0
+    IL_0022:  call       class [System.Drawing]System.Drawing.Brush [System.Drawing]System.Drawing.Brushes::get_White()
+    IL_0027:  ldarg.0
+    IL_0028:  call       instance valuetype [System.Drawing]System.Drawing.Rectangle [System.Windows.Forms]System.Windows.Forms.Control::get_ClientRectangle()
+    IL_002d:  callvirt   instance void [System.Drawing]System.Drawing.Graphics::FillRectangle(class [System.Drawing]System.Drawing.Brush,
+                                                                                              valuetype [System.Drawing]System.Drawing.Rectangle)
+    IL_0032:  ldloc.0
+    IL_0033:  call       class [System.Drawing]System.Drawing.Brush [System.Drawing]System.Drawing.Brushes::get_Red()
+    IL_0038:  ldarg.0
+    IL_0039:  call       instance valuetype [System.Drawing]System.Drawing.Rectangle [System.Windows.Forms]System.Windows.Forms.Control::get_ClientRectangle()
+    IL_003e:  stloc.1
+    IL_003f:  ldloca.s   V_1
+    IL_0041:  call       instance int32 [System.Drawing]System.Drawing.Rectangle::get_Width()
+    IL_0046:  ldc.i4.2
+    IL_0047:  div
+    IL_0048:  ldarg.0
+    IL_0049:  ldfld      int32 BallonPremierLibrary.Ballon::rayon
+    IL_004e:  sub
+    IL_004f:  ldarg.0
+    IL_0050:  call       instance valuetype [System.Drawing]System.Drawing.Rectangle [System.Windows.Forms]System.Windows.Forms.Control::get_ClientRectangle()
+    IL_0055:  stloc.1
+    IL_0056:  ldloca.s   V_1
+    IL_0058:  call       instance int32 [System.Drawing]System.Drawing.Rectangle::get_Width()
+    IL_005d:  ldc.i4.2
+    IL_005e:  div
+    IL_005f:  ldarg.0
+    IL_0060:  ldfld      int32 BallonPremierLibrary.Ballon::rayon
+    IL_0065:  sub
+    IL_0066:  ldc.i4.2
+    IL_0067:  ldarg.0
+    IL_0068:  ldfld      int32 BallonPremierLibrary.Ballon::rayon
+    IL_006d:  mul
+    IL_006e:  ldc.i4.2
+    IL_006f:  ldarg.0
+    IL_0070:  ldfld      int32 BallonPremierLibrary.Ballon::rayon
+    IL_0075:  mul
+    IL_0076:  callvirt   instance void [System.Drawing]System.Drawing.Graphics::FillEllipse(class [System.Drawing]System.Drawing.Brush,
+                                                                                            int32,
+                                                                                            int32,
+                                                                                            int32,
+                                                                                            int32)
+    IL_007b:  ldarg.0
+    IL_007c:  ldarg.0
+    IL_007d:  ldfld      int32 BallonPremierLibrary.Ballon::rayon
+    IL_0082:  ldc.i4.1
+    IL_0083:  sub
+    IL_0084:  stfld      int32 BallonPremierLibrary.Ballon::rayon
+    IL_0089:  ret
+
+    IL_008a:  ldarg.0
+    IL_008b:  ldfld      class [System.Windows.Forms]System.Windows.Forms.Timer BallonPremierLibrary.Ballon::x1
+    IL_0090:  callvirt   instance void [System.Windows.Forms]System.Windows.Forms.Timer::Start()
+    IL_0095:  ldarg.0
+    IL_0096:  ldfld      class [System.Windows.Forms]System.Windows.Forms.Timer BallonPremierLibrary.Ballon::x2
+    IL_009b:  callvirt   instance void [System.Windows.Forms]System.Windows.Forms.Timer::Stop()
+    IL_00a0:  ret
+  } // end of method Ballon::BaisserRayon
+
+  .method private hidebysig instance void 
+          menuItem3_Click(object sender,
+                          class [mscorlib]System.EventArgs e) cil managed
+  {
+    // Code size       45 (0x2d)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance class [System.Drawing]System.Drawing.Graphics [System.Windows.Forms]System.Windows.Forms.Control::CreateGraphics()
+    IL_0006:  call       class [System.Drawing]System.Drawing.Brush [System.Drawing]System.Drawing.Brushes::get_White()
+    IL_000b:  ldarg.0
+    IL_000c:  call       instance valuetype [System.Drawing]System.Drawing.Rectangle [System.Windows.Forms]System.Windows.Forms.Control::get_ClientRectangle()
+    IL_0011:  callvirt   instance void [System.Drawing]System.Drawing.Graphics::FillRectangle(class [System.Drawing]System.Drawing.Brush,
+                                                                                              valuetype [System.Drawing]System.Drawing.Rectangle)
+    IL_0016:  ldarg.0
+    IL_0017:  ldfld      class [System.Windows.Forms]System.Windows.Forms.Timer BallonPremierLibrary.Ballon::x2
+    IL_001c:  callvirt   instance void [System.Windows.Forms]System.Windows.Forms.Timer::Start()
+    IL_0021:  ldarg.0
+    IL_0022:  ldfld      class [System.Windows.Forms]System.Windows.Forms.Timer BallonPremierLibrary.Ballon::x1
+    IL_0027:  callvirt   instance void [System.Windows.Forms]System.Windows.Forms.Timer::Stop()
+    IL_002c:  ret
+  } // end of method Ballon::menuItem3_Click
+
+  .method public hidebysig instance void 
+          Go() cil managed
+  {
+    // Code size       15 (0xf)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  ldarg.0
+    IL_0002:  ldnull
+    IL_0003:  call       instance void BallonPremierLibrary.Ballon::menuItem2_Click(object,
+                                                                                    class [mscorlib]System.EventArgs)
+    IL_0008:  ldarg.0
+    IL_0009:  call       void [System.Windows.Forms]System.Windows.Forms.Application::Run(class [System.Windows.Forms]System.Windows.Forms.Form)
+    IL_000e:  ret
+  } // end of method Ballon::Go
+
+} // end of class BallonPremierLibrary.Ballon
+
+.class public auto ansi beforefieldinit BallonPremierLibrary.NombrePremier
+       extends [System.Windows.Forms]System.Windows.Forms.Form
+{
+  .field public int32 threadId
+  .method public hidebysig instance void 
+          ThreadFunction() cil managed
+  {
+    // Code size       114 (0x72)
+    .maxstack  4
+    .locals init ([0] int32 p,
+             [1] int32 i)
+    IL_0000:  ldc.i4.s   20
+    IL_0002:  ldc.i4.s   30
+    IL_0004:  call       void [mscorlib]System.Console::SetWindowSize(int32,
+                                                                      int32)
+    IL_0009:  ldc.i4.1
+    IL_000a:  stloc.0
+    IL_000b:  br.s       IL_0069
+
+    IL_000d:  ldc.i4.2
+    IL_000e:  stloc.1
+    IL_000f:  br.s       IL_0015
+
+    IL_0011:  ldloc.1
+    IL_0012:  ldc.i4.1
+    IL_0013:  add
+    IL_0014:  stloc.1
+    IL_0015:  ldloc.0
+    IL_0016:  ldloc.1
+    IL_0017:  rem
+    IL_0018:  brfalse.s  IL_001e
+
+    IL_001a:  ldloc.1
+    IL_001b:  ldloc.0
+    IL_001c:  blt.s      IL_0011
+
+    IL_001e:  ldloc.1
+    IL_001f:  ldloc.0
+    IL_0020:  bne.un.s   IL_005e
+
+    IL_0022:  ldc.i4.4
+    IL_0023:  newarr     [mscorlib]System.Object
+    IL_0028:  dup
+    IL_0029:  ldc.i4.0
+    IL_002a:  ldstr      "thread("
+    IL_002f:  stelem.ref
+    IL_0030:  dup
+    IL_0031:  ldc.i4.1
+    IL_0032:  call       class [mscorlib]System.Threading.Thread [mscorlib]System.Threading.Thread::get_CurrentThread()
+    IL_0037:  callvirt   instance int32 [mscorlib]System.Threading.Thread::get_ManagedThreadId()
+    IL_003c:  box        [mscorlib]System.Int32
+    IL_0041:  stelem.ref
+    IL_0042:  dup
+    IL_0043:  ldc.i4.2
+    IL_0044:  ldstr      ") = "
+    IL_0049:  stelem.ref
+    IL_004a:  dup
+    IL_004b:  ldc.i4.3
+    IL_004c:  ldloca.s   p
+    IL_004e:  call       instance string [mscorlib]System.Int32::ToString()
+    IL_0053:  stelem.ref
+    IL_0054:  call       string [mscorlib]System.String::Concat(object[])
+    IL_0059:  call       void [mscorlib]System.Console::WriteLine(string)
+    IL_005e:  ldc.i4.s   50
+    IL_0060:  call       void [mscorlib]System.Threading.Thread::Sleep(int32)
+    IL_0065:  ldloc.0
+    IL_0066:  ldc.i4.1
+    IL_0067:  add
+    IL_0068:  stloc.0
+    IL_0069:  ldloc.0
+    IL_006a:  ldc.i4     0xf4240
+    IL_006f:  blt.s      IL_000d
+
+    IL_0071:  ret
+  } // end of method NombrePremier::ThreadFunction
+
+  .method public hidebysig specialname rtspecialname 
+          instance void  .ctor() cil managed
+  {
+    // Code size       7 (0x7)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance void [System.Windows.Forms]System.Windows.Forms.Form::.ctor()
+    IL_0006:  ret
+  } // end of method NombrePremier::.ctor
+
+} // end of class BallonPremierLibrary.NombrePremier
+
+
+// =============================================================
+
+// *********** DISASSEMBLY COMPLETE ***********************
+// AVERTISSEMENTÿ: le fichier de ressources Win32 hashcode_BallonPremierLibrary.res a ‚t‚ cr‚‚

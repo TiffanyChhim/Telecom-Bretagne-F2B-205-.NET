@@ -1,0 +1,5 @@
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP2_Threads\BallonPremierLibrary\bin\Debug\BallonPremierLibrary.dll
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP2_Threads\BallonPremierLibrary\bin\Debug\BallonPremierLibrary.pdb
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP2_Threads\BallonPremierLibrary\obj\Debug\BallonPremierLibrary.dll
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP2_Threads\BallonPremierLibrary\obj\Debug\BallonPremierLibrary.pdb
+C:\Users\ChhimTiffany\Documents\Visual Studio 2015\Projects\TP2_Threads\BallonPremierLibrary\obj\Debug\BallonPremierLibrary.csprojResolveAssemblyReference.cache

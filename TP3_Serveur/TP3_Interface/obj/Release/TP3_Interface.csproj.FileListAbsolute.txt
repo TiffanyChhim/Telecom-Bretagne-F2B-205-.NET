@@ -1,0 +1,4 @@
+C:\Users\ChhimTiffany\Documents\Visual Studio 2015\Projects\TP3_Serveur\TP3_Interface\bin\Release\TP3_Interface.dll
+C:\Users\ChhimTiffany\Documents\Visual Studio 2015\Projects\TP3_Serveur\TP3_Interface\bin\Release\TP3_Interface.pdb
+C:\Users\ChhimTiffany\Documents\Visual Studio 2015\Projects\TP3_Serveur\TP3_Interface\obj\Release\TP3_Interface.dll
+C:\Users\ChhimTiffany\Documents\Visual Studio 2015\Projects\TP3_Serveur\TP3_Interface\obj\Release\TP3_Interface.pdb

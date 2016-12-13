@@ -1,0 +1,14 @@
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\Wpf_TP_Process\Wpf_TP_Process\bin\Debug\Wpf_TP_Process.exe.config
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\Wpf_TP_Process\Wpf_TP_Process\bin\Debug\Wpf_TP_Process.exe
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\Wpf_TP_Process\Wpf_TP_Process\bin\Debug\Wpf_TP_Process.pdb
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\Wpf_TP_Process\Wpf_TP_Process\obj\Debug\Wpf_TP_Process.csprojResolveAssemblyReference.cache
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\Wpf_TP_Process\Wpf_TP_Process\obj\Debug\MainWindow.g.cs
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\Wpf_TP_Process\Wpf_TP_Process\obj\Debug\App.g.cs
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\Wpf_TP_Process\Wpf_TP_Process\obj\Debug\Wpf_TP_Process_MarkupCompile.cache
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\Wpf_TP_Process\Wpf_TP_Process\obj\Debug\Wpf_TP_Process_MarkupCompile.lref
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\Wpf_TP_Process\Wpf_TP_Process\obj\Debug\MainWindow.baml
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\Wpf_TP_Process\Wpf_TP_Process\obj\Debug\Wpf_TP_Process.g.resources
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\Wpf_TP_Process\Wpf_TP_Process\obj\Debug\Wpf_TP_Process.Properties.Resources.resources
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\Wpf_TP_Process\Wpf_TP_Process\obj\Debug\Wpf_TP_Process.csproj.GenerateResource.Cache
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\Wpf_TP_Process\Wpf_TP_Process\obj\Debug\Wpf_TP_Process.exe
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\Wpf_TP_Process\Wpf_TP_Process\obj\Debug\Wpf_TP_Process.pdb

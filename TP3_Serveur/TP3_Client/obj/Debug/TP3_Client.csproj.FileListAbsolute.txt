@@ -1,0 +1,16 @@
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP3_Serveur\TP3_Client\bin\Debug\TP3_Client.exe.config
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP3_Serveur\TP3_Client\obj\Debug\TP3_Client.csprojResolveAssemblyReference.cache
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP3_Serveur\TP3_Client\obj\Debug\MainWindow.g.cs
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP3_Serveur\TP3_Client\obj\Debug\App.g.cs
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP3_Serveur\TP3_Client\obj\Debug\TP3_Client_MarkupCompile.cache
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP3_Serveur\TP3_Client\obj\Debug\TP3_Client_MarkupCompile.lref
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP3_Serveur\TP3_Client\bin\Debug\TP3_Client.exe
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP3_Serveur\TP3_Client\bin\Debug\TP3_Client.pdb
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP3_Serveur\TP3_Client\bin\Debug\TP3_Interface.dll
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP3_Serveur\TP3_Client\bin\Debug\TP3_Interface.pdb
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP3_Serveur\TP3_Client\obj\Debug\MainWindow.baml
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP3_Serveur\TP3_Client\obj\Debug\TP3_Client.g.resources
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP3_Serveur\TP3_Client\obj\Debug\TP3_Client.Properties.Resources.resources
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP3_Serveur\TP3_Client\obj\Debug\TP3_Client.csproj.GenerateResource.Cache
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP3_Serveur\TP3_Client\obj\Debug\TP3_Client.exe
+c:\users\chhimtiffany\documents\visual studio 2015\Projects\TP3_Serveur\TP3_Client\obj\Debug\TP3_Client.pdb
